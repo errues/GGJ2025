@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &363544044962548091
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4839728055147460955}
+  - component: {fileID: 7590648611802661554}
+  m_Layer: 0
+  m_Name: CharactersPools
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4839728055147460955
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 363544044962548091}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.00004787743, y: 0.09825711, z: -0.005290255}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7590648611802661554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 363544044962548091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e51645b8f9b64ba46b6c704ce96cda37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arms:
+  - {fileID: -3859639221210003851, guid: c5c3fc7c2e2dec14491c3730eb92e929, type: 3}
+  ears:
+  - {fileID: 4095463946907067839, guid: c5c3fc7c2e2dec14491c3730eb92e929, type: 3}
+  eyebrows:
+  - {fileID: 8776340961015295149, guid: c5c3fc7c2e2dec14491c3730eb92e929, type: 3}
+  eyeL:
+  - {fileID: 4972919716471792283, guid: c5c3fc7c2e2dec14491c3730eb92e929, type: 3}
+  eyeR:
+  - {fileID: 627991996394379453, guid: c5c3fc7c2e2dec14491c3730eb92e929, type: 3}
+  feet:
+  - {fileID: 4672128552430062666, guid: c5c3fc7c2e2dec14491c3730eb92e929, type: 3}
+  foto:
+  - {fileID: -2283919045640001160, guid: c5c3fc7c2e2dec14491c3730eb92e929, type: 3}
+  head:
+  - {fileID: -4017189620862090153, guid: c5c3fc7c2e2dec14491c3730eb92e929, type: 3}
+  head1:
+  - {fileID: 989577820716213839, guid: c5c3fc7c2e2dec14491c3730eb92e929, type: 3}
+  legs:
+  - {fileID: -7828081305636789627, guid: c5c3fc7c2e2dec14491c3730eb92e929, type: 3}
+  mouth:
+  - {fileID: 1245628284459718977, guid: c5c3fc7c2e2dec14491c3730eb92e929, type: 3}
+  nose:
+  - {fileID: 6080400523184958234, guid: c5c3fc7c2e2dec14491c3730eb92e929, type: 3}
+  pants:
+  - {fileID: -2691784582546423085, guid: c5c3fc7c2e2dec14491c3730eb92e929, type: 3}
+  shirt3:
+  - {fileID: -5319730322545180269, guid: c5c3fc7c2e2dec14491c3730eb92e929, type: 3}
+  faceTextures:
+  - {fileID: 2800000, guid: 26e3f1eee90175748b675d37e7c0623b, type: 3}
+  - {fileID: 2800000, guid: e60571cd2ad232845ba235cb4806bad5, type: 3}
+  - {fileID: 2800000, guid: 1b022092b5348ca42bc44582f0a39c30, type: 3}
+  - {fileID: 2800000, guid: c14ae93324ee1db4bbb1816bf4281966, type: 3}
+  - {fileID: 2800000, guid: 2c727681ca2454d4e9b9f02ed2d3aeb5, type: 3}
+  - {fileID: 2800000, guid: 2715f78a620358d4984526df782c5cfa, type: 3}
+  - {fileID: 2800000, guid: 4cca32ed751dc914e9f3cf3032d1e34c, type: 3}
+  - {fileID: 2800000, guid: 17f2b5e75914bff4bad8450c199e9fd4, type: 3}
+  - {fileID: 2800000, guid: 0cd1fd2d864416c44ad3d5616765de78, type: 3}
+  - {fileID: 2800000, guid: 9dd2bbe8e5a0e464aa165c6467b1f888, type: 3}
+  - {fileID: 2800000, guid: b1d9109cec43703479aeabad8dcfb681, type: 3}
+  - {fileID: 2800000, guid: 9146067af751cf64fa295950838637cc, type: 3}
+  - {fileID: 2800000, guid: 6e84e7d6fb4261142b6870bfeb84d8a9, type: 3}
+  - {fileID: 2800000, guid: 64678f16249c6b6419184cb87dadf2b1, type: 3}
+  - {fileID: 2800000, guid: f4053e169626cfe4ba19c9af10d0b0bb, type: 3}
+  - {fileID: 2800000, guid: 30cb2acbe25f680458218b5e4d1369db, type: 3}
+  - {fileID: 2800000, guid: 9ec0bc9f05d594f4bbc3caa9cb9942f5, type: 3}
+  - {fileID: 2800000, guid: e113055c8d957ac448773e82c4a76d67, type: 3}
+  - {fileID: 2800000, guid: 933a7d8f8cd20f748b6f0adf2755c487, type: 3}
+  - {fileID: 2800000, guid: 1cf7b16f5d7aad948a37f51af2ed1bd3, type: 3}
+  - {fileID: 2800000, guid: 390378b9406fa3a4497212f0e734cbbb, type: 3}
+  - {fileID: 2800000, guid: 34c4fc6d56a529e45ae50225842f6a60, type: 3}
+  - {fileID: 2800000, guid: 8c31ce4ba54e9eb4f870b21b02f95e23, type: 3}
+  - {fileID: 2800000, guid: f0b926c9e29d08940b9d42d4aea0610d, type: 3}
+  - {fileID: 2800000, guid: fdae79c6e96bacc4c8a9ac36971be7f6, type: 3}
+  - {fileID: 2800000, guid: 9e86c51cd05d07845b09cf19b9cffdf0, type: 3}
+  baseModel: {fileID: 919132149155446097, guid: c5c3fc7c2e2dec14491c3730eb92e929, type: 3}
+  CharactersPool: []
