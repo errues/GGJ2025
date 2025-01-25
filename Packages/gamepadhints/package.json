@@ -1,0 +1,19 @@
+{
+  "name": "bz.ports.gamepadhints",
+  "version": "1.0.1",
+  "displayName": "BZ Gamepad Hints",
+  "description": "Gamepad button icons hints package",
+  "unity": "2019.4",
+  "unityRelease": "40f1",
+  "keywords": [
+    "ports",
+    "gamepad hints"
+  ],
+  "author": {
+    "name": "Brave Zebra",
+    "url": "https://www.bravezebra.com/"
+  },
+  "dependencies": {
+      "bz.core.collections": "1.1.1"
+  }
+}

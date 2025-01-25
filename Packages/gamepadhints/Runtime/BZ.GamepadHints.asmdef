@@ -1,0 +1,30 @@
+{
+    "name": "BZ.GamepadHints",
+    "rootNamespace": "",
+    "references": [
+        "Unity.TextMeshPro",
+        "Unity.InputSystem",
+        "BZ.Core.Collections",
+        "BZ.Utils"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.unity.inputsystem",
+            "expression": "1.0.0",
+            "define": "INPUT_SYSTEM"
+        },
+        {
+            "name": "bz.core.utils",
+            "expression": "4.3.0",
+            "define": "UTILS_ATTRIBUTES"
+        }
+    ],
+    "noEngineReferences": false
+}

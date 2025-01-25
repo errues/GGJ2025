@@ -17,13 +17,17 @@ public class HygieneController : MonoBehaviour {
     }
 
     private void AddHygiene(object value) {
-        currentHygiene += (int)value;
+        currentHygiene = Mathf.Clamp(currentHygiene + (int)value, 0, maxHygiene);
         UpdateBar();
     }
 
     private void ReduceHygiene(object value) {
-        currentHygiene -= (int)value;
+        currentHygiene = Mathf.Clamp(currentHygiene - (int)value, 0, maxHygiene);
         UpdateBar();
+
+        if (currentHygiene == 0) {
+            MessageBus.Instance.Notify("GameOver");
+        }
     }
 
     private void UpdateBar() {
