@@ -8,18 +8,22 @@ public class TimeController : MonoBehaviour {
     [SerializeField] private TextMeshProUGUI text;
 
     private float remainingTime;
+    private bool timerActive = true;
 
     private void Awake() {
         remainingTime = gameDuration;
     }
 
     void Update() {
-        remainingTime = Mathf.Clamp(remainingTime - Time.deltaTime, 0, gameDuration);
+        if (timerActive) {
+            remainingTime = Mathf.Clamp(remainingTime - Time.deltaTime, 0, gameDuration);
 
-        UpdateTimerText();
+            UpdateTimerText();
 
-        if (remainingTime <= 0) {
-            MessageBus.Instance.Notify("TimeUp");
+            if (remainingTime <= 0) {
+                MessageBus.Instance.Notify("TimeUp");
+                timerActive = false;
+            }
         }
     }
 
