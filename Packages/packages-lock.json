@@ -1,5 +1,19 @@
 {
   "dependencies": {
+    "bz.core.collections": {
+      "version": "file:BZCollections",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
+    "bz.ports.gamepadhints": {
+      "version": "file:gamepadhints",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "bz.core.collections": "1.1.1"
+      }
+    },
     "com.coffee.softmask-for-ugui": {
       "version": "file:SoftMaskForUGUI-3.2.2",
       "depth": 0,

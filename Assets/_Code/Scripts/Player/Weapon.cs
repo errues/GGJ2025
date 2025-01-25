@@ -5,12 +5,7 @@ using UnityEngine;
 public class Weapon : MonoBehaviour
 {
     public WeaponModel Model;
-    public Animator Animator { get; private set; }
-
-    private void Awake()
-    {
-        Animator = GetComponentInChildren<Animator>(true);
-    }
+    public Animator Animator;    
 
 
     public void Attack()

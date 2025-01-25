@@ -105,6 +105,7 @@ MonoBehaviour:
   movementSpeed: 3
   acceleration: 50
   sprintSpeedMultiplier: 2
+  _weaponHandler: {fileID: 0}
 --- !u!114 &3605304436728283653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -828,10 +829,6 @@ PrefabInstance:
       propertyPath: _weapons.Array.size
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 5963159911690298148, guid: 4fad1dca90c8aa248819e25a31c4e7d6, type: 3}
-      propertyPath: '_weapons.Array.data[1]'
-      value: 
-      objectReference: {fileID: 1425385252523893553}
     - target: {fileID: 6018664571654526257, guid: 4fad1dca90c8aa248819e25a31c4e7d6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0.9982269
@@ -1961,17 +1958,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7da1a46a4cbe83f4493f12e8a57a00c7, type: 3}
---- !u!114 &1425385252523893553 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6359367264744254046, guid: 7da1a46a4cbe83f4493f12e8a57a00c7, type: 3}
-  m_PrefabInstance: {fileID: 5442317028512778607}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6fa37a34dcdaed844b887c152f771856, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &8720326225523420149 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3639520923709137562, guid: 7da1a46a4cbe83f4493f12e8a57a00c7, type: 3}
