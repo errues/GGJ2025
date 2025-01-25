@@ -121,5 +121,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c0ef285e095296409074fd99fd5fdd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MinDirtyLevelToClean: 50
-  m_IncrementSpeed: 10
+  m_MinDirtyLevelToClean: 0
+  m_DecrementAmount: 10
+  incrementSpeedLimits: {x: 2, y: 10}
