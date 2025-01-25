@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c5c3fc7c2e2dec14491c3730eb92e929
+guid: 8b579c9725e87b34d80271f6cbb397d7
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -29,7 +29,204 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Pose_test
+      takeName: Pose_test
+      internalID: -3202001586810348818
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: character:DeformationSystem
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Hip_L
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Hip_L/character:Knee_L
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Hip_L/character:Knee_L/character:Ankle_L
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Hip_L/character:Knee_L/character:Ankle_L/character:Toes_L
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Hip_L/character:Knee_L/character:Ankle_L/character:Toes_L/character:ToesEnd_L
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Hip_R
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Hip_R/character:Knee_R
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Hip_R/character:Knee_R/character:Ankle_R
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Hip_R/character:Knee_R/character:Ankle_R/character:Toes_R
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Hip_R/character:Knee_R/character:Ankle_R/character:Toes_R/character:ToesEnd_R
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Neck_M
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Neck_M/character:Head_M
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Neck_M/character:Head_M/character:brow_L
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Neck_M/character:Head_M/character:brow_L/character:brow1_L
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Neck_M/character:Head_M/character:brow_R
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Neck_M/character:Head_M/character:brow_R/character:brow1_R
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Neck_M/character:Head_M/character:ear1_L
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Neck_M/character:Head_M/character:ear1_L/character:ear2_L
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Neck_M/character:Head_M/character:ear1_R
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Neck_M/character:Head_M/character:ear1_R/character:ear2_R
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Neck_M/character:Head_M/character:Eye_L
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Neck_M/character:Head_M/character:Eye_L/character:EyeEnd_L
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Neck_M/character:Head_M/character:Eye_R
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Neck_M/character:Head_M/character:Eye_R/character:EyeEnd_R
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Neck_M/character:Head_M/character:HeadEnd_M
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Neck_M/character:Head_M/character:Jaw_M
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Neck_M/character:Head_M/character:Jaw_M/character:JawEnd_M
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Neck_M/character:Head_M/character:nose1_M
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Neck_M/character:Head_M/character:nose1_M/character:nose2_M
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Scapula_L
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Scapula_L/character:Shoulder_L
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Scapula_L/character:Shoulder_L/character:Elbow_L
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Scapula_L/character:Shoulder_L/character:Elbow_L/character:Wrist_L
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Scapula_L/character:Shoulder_L/character:Elbow_L/character:Wrist_L/character:Cup_L
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Scapula_L/character:Shoulder_L/character:Elbow_L/character:Wrist_L/character:Cup_L/character:PinkyFinger1_L
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Scapula_L/character:Shoulder_L/character:Elbow_L/character:Wrist_L/character:Cup_L/character:PinkyFinger1_L/character:PinkyFinger2_L
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Scapula_L/character:Shoulder_L/character:Elbow_L/character:Wrist_L/character:Cup_L/character:PinkyFinger1_L/character:PinkyFinger2_L/character:PinkyFinger3_L
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Scapula_L/character:Shoulder_L/character:Elbow_L/character:Wrist_L/character:Cup_L/character:PinkyFinger1_L/character:PinkyFinger2_L/character:PinkyFinger3_L/character:PinkyFinger4_L
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Scapula_L/character:Shoulder_L/character:Elbow_L/character:Wrist_L/character:Cup_L/character:RingFinger1_L
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Scapula_L/character:Shoulder_L/character:Elbow_L/character:Wrist_L/character:Cup_L/character:RingFinger1_L/character:RingFinger2_L
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Scapula_L/character:Shoulder_L/character:Elbow_L/character:Wrist_L/character:Cup_L/character:RingFinger1_L/character:RingFinger2_L/character:RingFinger3_L
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Scapula_L/character:Shoulder_L/character:Elbow_L/character:Wrist_L/character:Cup_L/character:RingFinger1_L/character:RingFinger2_L/character:RingFinger3_L/character:RingFinger4_L
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Scapula_L/character:Shoulder_L/character:Elbow_L/character:Wrist_L/character:IndexFinger1_L
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Scapula_L/character:Shoulder_L/character:Elbow_L/character:Wrist_L/character:IndexFinger1_L/character:IndexFinger2_L
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Scapula_L/character:Shoulder_L/character:Elbow_L/character:Wrist_L/character:IndexFinger1_L/character:IndexFinger2_L/character:IndexFinger3_L
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Scapula_L/character:Shoulder_L/character:Elbow_L/character:Wrist_L/character:IndexFinger1_L/character:IndexFinger2_L/character:IndexFinger3_L/character:IndexFinger4_L
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Scapula_L/character:Shoulder_L/character:Elbow_L/character:Wrist_L/character:MiddleFinger1_L
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Scapula_L/character:Shoulder_L/character:Elbow_L/character:Wrist_L/character:MiddleFinger1_L/character:MiddleFinger2_L
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Scapula_L/character:Shoulder_L/character:Elbow_L/character:Wrist_L/character:MiddleFinger1_L/character:MiddleFinger2_L/character:MiddleFinger3_L
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Scapula_L/character:Shoulder_L/character:Elbow_L/character:Wrist_L/character:MiddleFinger1_L/character:MiddleFinger2_L/character:MiddleFinger3_L/character:MiddleFinger4_L
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Scapula_L/character:Shoulder_L/character:Elbow_L/character:Wrist_L/character:ThumbFinger1_L
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Scapula_L/character:Shoulder_L/character:Elbow_L/character:Wrist_L/character:ThumbFinger1_L/character:ThumbFinger2_L
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Scapula_L/character:Shoulder_L/character:Elbow_L/character:Wrist_L/character:ThumbFinger1_L/character:ThumbFinger2_L/character:ThumbFinger3_L
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Scapula_L/character:Shoulder_L/character:Elbow_L/character:Wrist_L/character:ThumbFinger1_L/character:ThumbFinger2_L/character:ThumbFinger3_L/character:ThumbFinger4_L
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Scapula_R
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Scapula_R/character:Shoulder_R
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Scapula_R/character:Shoulder_R/character:Elbow_R
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Scapula_R/character:Shoulder_R/character:Elbow_R/character:Wrist_R
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Scapula_R/character:Shoulder_R/character:Elbow_R/character:Wrist_R/character:Cup_R
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Scapula_R/character:Shoulder_R/character:Elbow_R/character:Wrist_R/character:Cup_R/character:PinkyFinger1_R
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Scapula_R/character:Shoulder_R/character:Elbow_R/character:Wrist_R/character:Cup_R/character:PinkyFinger1_R/character:PinkyFinger2_R
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Scapula_R/character:Shoulder_R/character:Elbow_R/character:Wrist_R/character:Cup_R/character:PinkyFinger1_R/character:PinkyFinger2_R/character:PinkyFinger3_R
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Scapula_R/character:Shoulder_R/character:Elbow_R/character:Wrist_R/character:Cup_R/character:PinkyFinger1_R/character:PinkyFinger2_R/character:PinkyFinger3_R/character:PinkyFinger4_R
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Scapula_R/character:Shoulder_R/character:Elbow_R/character:Wrist_R/character:Cup_R/character:RingFinger1_R
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Scapula_R/character:Shoulder_R/character:Elbow_R/character:Wrist_R/character:Cup_R/character:RingFinger1_R/character:RingFinger2_R
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Scapula_R/character:Shoulder_R/character:Elbow_R/character:Wrist_R/character:Cup_R/character:RingFinger1_R/character:RingFinger2_R/character:RingFinger3_R
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Scapula_R/character:Shoulder_R/character:Elbow_R/character:Wrist_R/character:Cup_R/character:RingFinger1_R/character:RingFinger2_R/character:RingFinger3_R/character:RingFinger4_R
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Scapula_R/character:Shoulder_R/character:Elbow_R/character:Wrist_R/character:IndexFinger1_R
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Scapula_R/character:Shoulder_R/character:Elbow_R/character:Wrist_R/character:IndexFinger1_R/character:IndexFinger2_R
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Scapula_R/character:Shoulder_R/character:Elbow_R/character:Wrist_R/character:IndexFinger1_R/character:IndexFinger2_R/character:IndexFinger3_R
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Scapula_R/character:Shoulder_R/character:Elbow_R/character:Wrist_R/character:IndexFinger1_R/character:IndexFinger2_R/character:IndexFinger3_R/character:IndexFinger4_R
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Scapula_R/character:Shoulder_R/character:Elbow_R/character:Wrist_R/character:MiddleFinger1_R
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Scapula_R/character:Shoulder_R/character:Elbow_R/character:Wrist_R/character:MiddleFinger1_R/character:MiddleFinger2_R
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Scapula_R/character:Shoulder_R/character:Elbow_R/character:Wrist_R/character:MiddleFinger1_R/character:MiddleFinger2_R/character:MiddleFinger3_R
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Scapula_R/character:Shoulder_R/character:Elbow_R/character:Wrist_R/character:MiddleFinger1_R/character:MiddleFinger2_R/character:MiddleFinger3_R/character:MiddleFinger4_R
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Scapula_R/character:Shoulder_R/character:Elbow_R/character:Wrist_R/character:ThumbFinger1_R
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Scapula_R/character:Shoulder_R/character:Elbow_R/character:Wrist_R/character:ThumbFinger1_R/character:ThumbFinger2_R
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Scapula_R/character:Shoulder_R/character:Elbow_R/character:Wrist_R/character:ThumbFinger1_R/character:ThumbFinger2_R/character:ThumbFinger3_R
+        weight: 1
+      - path: character:DeformationSystem/character:Root_M/character:Spine1_M/character:Chest_M/character:Scapula_R/character:Shoulder_R/character:Elbow_R/character:Wrist_R/character:ThumbFinger1_R/character:ThumbFinger2_R/character:ThumbFinger3_R/character:ThumbFinger4_R
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 0
   meshes:
     lODScreenPercentages: []
@@ -1020,11 +1217,11 @@ ModelImporter:
     hasTranslationDoF: 1
     hasExtraRoot: 0
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: c5c3fc7c2e2dec14491c3730eb92e929, type: 3}
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 3
   humanoidOversampling: 1
-  avatarSetup: 1
+  avatarSetup: 2
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
   importBlendShapeDeformPercent: 1
   remapMaterialsIfMaterialImportModeIsNone: 0
