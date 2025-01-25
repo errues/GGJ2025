@@ -1,0 +1,17 @@
+{
+    "name": "bz.core.collections",
+    "version": "1.1.2",
+    "displayName": "BZ Collections",
+    "description": "BZ custom collections",
+    "unity": "2019.1",
+    "unityRelease": "0b5",
+    "keywords": [
+        "collections",
+        "blackboard",
+        "priority queue",
+        "enum array"
+    ],
+    "author": {
+        "name": "Brave Zebra"
+    }
+}

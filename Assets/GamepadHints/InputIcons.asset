@@ -1,0 +1,226 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c884c60778ca8694cbe63bdb0fed394a, type: 3}
+  m_Name: InputIcons
+  m_EditorClassIdentifier: 
+  _gamepadButtonIcons:
+    _enumArray:
+    - _enumArray:
+      - _icon: {fileID: -1232909417, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 100
+      - _icon: {fileID: -781204023, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 76
+      - _icon: {fileID: 1289727417, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 46
+      - _icon: {fileID: 1289727417, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 17
+      - _icon: {fileID: 1289727417, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 17
+    - _enumArray:
+      - _icon: {fileID: -193797707, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 108
+      - _icon: {fileID: -1741924589, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 78
+      - _icon: {fileID: 340321295, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 47
+      - _icon: {fileID: 340321295, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 19
+      - _icon: {fileID: 340321295, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 19
+    - _enumArray:
+      - _icon: {fileID: -1493226802, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 101
+      - _icon: {fileID: -1493226802, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 77
+      - _icon: {fileID: 1340102236, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 46
+      - _icon: {fileID: 1340102236, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 18
+    - _enumArray:
+      - _icon: {fileID: -1958133471, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 109
+      - _icon: {fileID: 416617985, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 79
+      - _icon: {fileID: 2027163947, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 48
+      - _icon: {fileID: 1183163424, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 20
+    - _enumArray:
+      - _icon: {fileID: -1625428024, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 118
+      - _icon: {fileID: 79087041, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 89
+      - _icon: {fileID: -1726873296, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 58
+      - _icon: {fileID: -1495037720, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 29
+    - _enumArray:
+      - _icon: {fileID: 707768075, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 116
+      - _icon: {fileID: -1444421980, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 82
+      - _icon: {fileID: -1669262436, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 51
+      - _icon: {fileID: -1202162649, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 26
+      - _icon: {fileID: -1202162649, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 26
+    - _enumArray:
+      - _icon: {fileID: 1577202464, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 117
+      - _icon: {fileID: 570961300, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 83
+      - _icon: {fileID: -783600270, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 52
+      - _icon: {fileID: -1748653101, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 25
+    - _enumArray:
+      - _icon: {fileID: 526545769, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 115
+      - _icon: {fileID: 626039766, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 81
+      - _icon: {fileID: 1666843079, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 50
+      - _icon: {fileID: 1850278609, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 28
+    - _enumArray:
+      - _icon: {fileID: -2541064, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 114
+      - _icon: {fileID: -1033480446, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 80
+      - _icon: {fileID: -279390085, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 49
+      - _icon: {fileID: 2103350135, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 27
+    - _enumArray:
+      - _icon: {fileID: -777827412, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 107
+      - _icon: {fileID: 845392585, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 75
+      - _icon: {fileID: -1009307554, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 45
+      - _icon: {fileID: 1906339275, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 10
+    - _enumArray:
+      - _icon: {fileID: 957979074, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 106
+      - _icon: {fileID: 169490247, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 74
+      - _icon: {fileID: 1408510026, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 57
+      - _icon: {fileID: -634558758, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 15
+    - _enumArray:
+      - _icon: {fileID: 1790372136, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 102
+      - _icon: {fileID: -313513592, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 71
+      - _icon: {fileID: 1402012753, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 41
+      - _icon: {fileID: -1629610371, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 11
+      - _icon: {fileID: -1629610371, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 11
+    - _enumArray:
+      - _icon: {fileID: -457314168, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 103
+      - _icon: {fileID: 176947684, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 70
+      - _icon: {fileID: -2117162395, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 42
+      - _icon: {fileID: 701969122, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 12
+    - _enumArray:
+      - _icon: {fileID: -764150822, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 105
+      - _icon: {fileID: 515250498, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 72
+      - _icon: {fileID: 896069528, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 44
+      - _icon: {fileID: -1486782550, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 14
+    - _enumArray:
+      - _icon: {fileID: -1550885220, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 104
+      - _icon: {fileID: 1977240902, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 73
+      - _icon: {fileID: -1826910081, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 43
+      - _icon: {fileID: 624888405, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 13
+    - _enumArray:
+      - _icon: {fileID: 2098862554, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 90
+      - _icon: {fileID: 37620809, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 68
+      - _icon: {fileID: -1914058805, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 30
+      - _icon: {fileID: -615877479, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 0
+    - _enumArray:
+      - _icon: {fileID: 1809390880, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 91
+      - _icon: {fileID: 452430143, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 69
+      - _icon: {fileID: 1604721354, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 31
+      - _icon: {fileID: -180548735, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 1
+    - _enumArray:
+      - _icon: {fileID: 1166790785, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 92
+      - _icon: {fileID: 1654755488, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 64
+      - _icon: {fileID: -1629534994, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 32
+      - _icon: {fileID: -203731052, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 8
+    - _enumArray:
+      - _icon: {fileID: -910715086, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 93
+      - _icon: {fileID: 2016270793, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 65
+      - _icon: {fileID: 1546889489, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 33
+      - _icon: {fileID: -1824093756, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 9
+    - _enumArray:
+      - _icon: {fileID: 1790372136, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 102
+      - _icon: {fileID: -313513592, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 71
+      - _icon: {fileID: 1402012753, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 41
+      - _icon: {fileID: -1629610371, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 11
+      - _icon: {fileID: 276200179, guid: 1e88450d30f32c24bafdd1ccead45369, type: 3}
+        _textMeshProIcon: 4
+    - _enumArray:
+      - _icon: {fileID: -910715086, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 93
+      - _icon: {fileID: 2016270793, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 65
+      - _icon: {fileID: 1546889489, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 33
+      - _icon: {fileID: -1824093756, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 9
+    - _enumArray:
+      - _icon: {fileID: -910715086, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 93
+      - _icon: {fileID: 2016270793, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 65
+      - _icon: {fileID: 1546889489, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 33
+      - _icon: {fileID: -1824093756, guid: 923ddeebe45868b46a23bcb6cc29d9d3, type: 3}
+        _textMeshProIcon: 9
+  _controlsSpriteAsset: {fileID: 11400000, guid: 9a2830729e3b6804ba645e98288a24d5, type: 2}
+  _controlsKeyboardSpriteAsset: {fileID: 11400000, guid: f0e2e437f7e18cf44bce22ca5dcefbda, type: 2}
