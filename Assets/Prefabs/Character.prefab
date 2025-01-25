@@ -60,6 +60,7 @@ GameObject:
   - component: {fileID: 3605304436728283653}
   - component: {fileID: 672415074931712767}
   - component: {fileID: 412052419695210200}
+  - component: {fileID: 4182180300971298}
   - component: {fileID: 8587190167611272693}
   - component: {fileID: 1271790284926251741}
   - component: {fileID: 634912343014649920}
@@ -148,6 +149,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hygieneBar: {fileID: 5389124025456808284}
   maxHygiene: 100
+--- !u!114 &4182180300971298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3385459944334694589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e67b2abb20e987f4db8013f244e2920f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameDuration: 300
+  text: {fileID: 2684748931597056289}
 --- !u!136 &8587190167611272693
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2063,6 +2078,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0c265ce81ee0e149b159437754e8718, type: 3}
+--- !u!114 &2684748931597056289 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5438147739159810786, guid: f0c265ce81ee0e149b159437754e8718, type: 3}
+  m_PrefabInstance: {fileID: 7942672316063116227}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &4317265531153743303 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6183451375980090884, guid: f0c265ce81ee0e149b159437754e8718, type: 3}
