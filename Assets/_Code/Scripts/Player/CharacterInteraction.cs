@@ -16,14 +16,14 @@ public class CharacterInteraction : MonoBehaviour
             if (hit.transform.TryGetComponent(out IInteractable interactable))
             {
                 currentInteractable = interactable;
-            }
-            else
-            {
+            } else {
+                if (currentInteractable != null)
+                    currentInteractable.CancelInteract();
                 currentInteractable = null;
             }
-        }
-        else
-        {
+        } else {
+            if (currentInteractable != null)
+                currentInteractable.CancelInteract();
             currentInteractable = null;
         }
 

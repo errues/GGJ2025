@@ -9,6 +9,7 @@ public class MessCharacterControler : MonoBehaviour, IInteractable {
     [SerializeField]
     private Vector2 incrementSpeedLimits; // Speed at which dirtyLevel increases or decreases per second
     private Material mCubeMaterial; // Material of the cube
+    [SerializeField]
     private float mDirtyLevel = 0f; // Current dirty level of the cube (0 to 100)
 
     private bool mCleaningDirtyNPC;
@@ -55,6 +56,7 @@ public class MessCharacterControler : MonoBehaviour, IInteractable {
 
     // Coroutine to gradually decrease the dirty level
     public void CleanDirtyCharacter() {
+        
         if (mDirtyLevel <= 0) {
             if (mCleaningDirtyNPC)
                 mCleaningDirtyNPC = false;
@@ -78,8 +80,9 @@ public class MessCharacterControler : MonoBehaviour, IInteractable {
         incrementSpeed = Random.Range(incrementSpeedLimits.x, incrementSpeedLimits.y);
     }
 
-    public void CancelCleanDirtyCharacter() {
+    public void CancelInteract() {
         mCleaningDirtyNPC = false;
+        MessNPC();
     }
 
 
