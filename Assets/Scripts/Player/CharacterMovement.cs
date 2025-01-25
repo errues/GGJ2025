@@ -18,6 +18,12 @@ public class CharacterMovement : MonoBehaviour {
         playerInput = GetComponent<PlayerInput>();
     }
 
+    private void Update() {
+        if (playerInput.currentControlScheme == "Gamepad" && moveInput == Vector2.zero) {
+            sprintInput = false;
+        }
+    }
+
     void FixedUpdate() {
         Vector2 targetSpeed = moveInput * movementSpeed * (sprintInput ? sprintSpeedMultiplier : 1);
         currentMovementVelocity = Vector2.MoveTowards(currentMovementVelocity, targetSpeed, acceleration * Time.fixedDeltaTime);
@@ -29,6 +35,10 @@ public class CharacterMovement : MonoBehaviour {
     }
 
     private void OnSprint(InputValue value) {
-        sprintInput = value.isPressed;
+        sprintInput = value.isPressed || playerInput.currentControlScheme == "Gamepad";
+    }
+
+    private void OnControlsChanged() {
+        sprintInput = false;
     }
 }
