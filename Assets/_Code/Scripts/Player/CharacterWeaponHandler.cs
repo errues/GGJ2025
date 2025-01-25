@@ -9,7 +9,7 @@ public class CharacterWeaponHandler : MonoBehaviour
     [SerializeField] private int _currentWeaponIndex = 0;
     [SerializeField] private int _totalWeaponsAmount = 3;
 
-    public Animator CurrentWeaponAnimator { get; private set; }
+    public Animator CurrentWeaponAnimator => Current.Animator;
     [SerializeField] private Weapon[] _weapons;
 
     public Weapon Current => _weapons[_currentWeaponIndex];
@@ -18,7 +18,6 @@ public class CharacterWeaponHandler : MonoBehaviour
 
     private void Awake()
     {
-        CurrentWeaponAnimator = Current.Animator;
         _playerInput.actions["Attack"].performed += OnAttack;
         _playerInput.actions["Previous"].performed += OnPrevious;
         _playerInput.actions["Next"].performed += OnNext;

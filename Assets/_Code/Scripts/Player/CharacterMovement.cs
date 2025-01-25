@@ -28,6 +28,8 @@ public class CharacterMovement : MonoBehaviour
         {
             sprintInput = false;
         }
+
+        _weaponHandler.CurrentWeaponAnimator.SetFloat("Speed", currentMovementVelocity.magnitude);
     }
 
     void FixedUpdate()
@@ -35,8 +37,6 @@ public class CharacterMovement : MonoBehaviour
         Vector2 targetSpeed = moveInput * movementSpeed * (sprintInput ? sprintSpeedMultiplier : 1);
         currentMovementVelocity = Vector2.MoveTowards(currentMovementVelocity, targetSpeed, acceleration * Time.fixedDeltaTime);
         rb.linearVelocity = transform.rotation * new Vector3(currentMovementVelocity.x, rb.linearVelocity.y, currentMovementVelocity.y);
-
-        //_weaponHandler.CurrentWeaponAnimator.SetFloat("Speed", rb.linearVelocity.magnitude);
     }
 
     private void OnMove(InputValue value)
