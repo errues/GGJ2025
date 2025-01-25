@@ -77,4 +77,8 @@ public class Cleanable : MonoBehaviour, IInteractable
             UpdateView();
         }
     }
+
+    public void CancelInteract()
+    {
+    }
 }

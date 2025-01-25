@@ -16,20 +16,24 @@ public class CharacterInteraction : MonoBehaviour
             if (hit.transform.TryGetComponent(out IInteractable interactable))
             {
                 currentInteractable = interactable;
-            } else {
+            }
+            else
+            {
                 if (currentInteractable != null)
                     currentInteractable.CancelInteract();
                 currentInteractable = null;
             }
-        } else {
+        }
+        else
+        {
             if (currentInteractable != null)
                 currentInteractable.CancelInteract();
             currentInteractable = null;
         }
 
 
-        bool showSPrite = currentInteractable != null && currentInteractable.CanInteract();
-        interactionSprite.gameObject.SetActive(showSPrite);
+        bool showSprite = currentInteractable != null && currentInteractable.CanInteract();
+        interactionSprite.color = showSprite? Color.red : Color.white;
     }
 
     private void OnInteract()
@@ -48,19 +52,3 @@ public class CharacterInteraction : MonoBehaviour
         }
     }
 }
-
-
-
-
-//public class PickeableWeapon : IInteractable
-//{
-//    public bool CanInteract()
-//    {
-//        throw new System.NotImplementedException();
-//    }
-
-//    public void Interact()
-//    {
-//        throw new System.NotImplementedException();
-//    }
-//}
