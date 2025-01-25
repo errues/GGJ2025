@@ -1,6 +1,6 @@
 ﻿using System;
 using UnityEngine;
-
+ 
 
 [CreateAssetMenu(fileName = "WeaponModel", menuName = "ScriptableObjects/WeaponModel", order = 1)]
 public class WeaponModel : ScriptableObject, IEquatable<WeaponModel>
