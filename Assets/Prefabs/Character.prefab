@@ -190,6 +190,7 @@ GameObject:
   - component: {fileID: 3511143859061391530}
   - component: {fileID: 485159527088174882}
   - component: {fileID: 1698790027576385935}
+  - component: {fileID: 1787201390398066844}
   m_Layer: 5
   m_Name: SelectedWeapon
   m_TagString: Untagged
@@ -254,6 +255,20 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1787201390398066844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1983526658940384210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0e13fe619a6f7642b727b66d06bd5bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _characterWeaponHandler: {fileID: 2824448971620462789}
+  _selectedWeaponImage: {fileID: 1698790027576385935}
 --- !u!1 &3385459944334694589
 GameObject:
   m_ObjectHideFlags: 0
@@ -457,7 +472,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _currentWeaponIndex: 0
-  _totalWeaponsAmount: 1
+  _totalWeaponsAmount: 3
   _weapons:
   - {fileID: 5876875300854867224}
   - {fileID: 5394643618556286880}
