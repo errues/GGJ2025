@@ -30,6 +30,8 @@ public class CharacterWeaponHandler : MonoBehaviour
 
     private void OnAttack(InputAction.CallbackContext context)
     {
+        if (_isChangingWeapon) return;
+
         Current.Attack();
     }
 
