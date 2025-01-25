@@ -1,0 +1,506 @@
+fileFormatVersion: 2
+guid: 8572a0e555602064abcf00f5ff24480f
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Sponge_Idle
+      takeName: Sponge_Idle
+      internalID: 1964654877172106349
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Sponge_Hide
+      takeName: Sponge_Hide
+      internalID: 8041526342111797201
+      firstFrame: 91
+      lastFrame: 120
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Sponge_Show
+      takeName: Sponge_Show
+      internalID: -2081710806740822669
+      firstFrame: 121
+      lastFrame: 150
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Sponge_Attack1
+      takeName: Sponge_Attack1
+      internalID: 9096665902702222300
+      firstFrame: 151
+      lastFrame: 180
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Sponge_Attack2
+      takeName: Sponge_Attack2
+      internalID: 3429649243697330558
+      firstFrame: 181
+      lastFrame: 210
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Sponge_Attack3
+      takeName: Sponge_Attack3
+      internalID: 7577559341606933801
+      firstFrame: 211
+      lastFrame: 240
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Sponge_Attack4
+      takeName: Sponge_Attack4
+      internalID: -7549407063382027983
+      firstFrame: 241
+      lastFrame: 270
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Sponge_Attack5
+      takeName: Sponge_Attack5
+      internalID: 4095782825727699320
+      firstFrame: 271
+      lastFrame: 300
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Sponge_Walk
+      takeName: Sponge_Walk
+      internalID: -1273316077008629674
+      firstFrame: 301
+      lastFrame: 330
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: character_fps:Group
+        weight: 1
+      - path: character_fps:Group/character_fps:DeformationSystem
+        weight: 1
+      - path: character_fps:Group/character_fps:DeformationSystem/character_fps:Root_M
+        weight: 1
+      - path: character_fps:Group/character_fps:DeformationSystem/character_fps:Root_M/character_fps:Spine1_M
+        weight: 1
+      - path: character_fps:Group/character_fps:DeformationSystem/character_fps:Root_M/character_fps:Spine1_M/character_fps:Chest_M
+        weight: 1
+      - path: character_fps:Group/character_fps:DeformationSystem/character_fps:Root_M/character_fps:Spine1_M/character_fps:Chest_M/character_fps:Scapula_L
+        weight: 1
+      - path: character_fps:Group/character_fps:DeformationSystem/character_fps:Root_M/character_fps:Spine1_M/character_fps:Chest_M/character_fps:Scapula_L/character_fps:Shoulder_L
+        weight: 1
+      - path: character_fps:Group/character_fps:DeformationSystem/character_fps:Root_M/character_fps:Spine1_M/character_fps:Chest_M/character_fps:Scapula_L/character_fps:Shoulder_L/character_fps:Elbow_L
+        weight: 1
+      - path: character_fps:Group/character_fps:DeformationSystem/character_fps:Root_M/character_fps:Spine1_M/character_fps:Chest_M/character_fps:Scapula_L/character_fps:Shoulder_L/character_fps:Elbow_L/character_fps:Wrist_L
+        weight: 1
+      - path: character_fps:Group/character_fps:DeformationSystem/character_fps:Root_M/character_fps:Spine1_M/character_fps:Chest_M/character_fps:Scapula_L/character_fps:Shoulder_L/character_fps:Elbow_L/character_fps:Wrist_L/character_fps:Cup_L
+        weight: 1
+      - path: character_fps:Group/character_fps:DeformationSystem/character_fps:Root_M/character_fps:Spine1_M/character_fps:Chest_M/character_fps:Scapula_L/character_fps:Shoulder_L/character_fps:Elbow_L/character_fps:Wrist_L/character_fps:Cup_L/character_fps:PinkyFinger1_L
+        weight: 1
+      - path: character_fps:Group/character_fps:DeformationSystem/character_fps:Root_M/character_fps:Spine1_M/character_fps:Chest_M/character_fps:Scapula_L/character_fps:Shoulder_L/character_fps:Elbow_L/character_fps:Wrist_L/character_fps:Cup_L/character_fps:PinkyFinger1_L/character_fps:PinkyFinger2_L
+        weight: 1
+      - path: character_fps:Group/character_fps:DeformationSystem/character_fps:Root_M/character_fps:Spine1_M/character_fps:Chest_M/character_fps:Scapula_L/character_fps:Shoulder_L/character_fps:Elbow_L/character_fps:Wrist_L/character_fps:Cup_L/character_fps:PinkyFinger1_L/character_fps:PinkyFinger2_L/character_fps:PinkyFinger3_L
+        weight: 1
+      - path: character_fps:Group/character_fps:DeformationSystem/character_fps:Root_M/character_fps:Spine1_M/character_fps:Chest_M/character_fps:Scapula_L/character_fps:Shoulder_L/character_fps:Elbow_L/character_fps:Wrist_L/character_fps:Cup_L/character_fps:PinkyFinger1_L/character_fps:PinkyFinger2_L/character_fps:PinkyFinger3_L/character_fps:PinkyFinger4_L
+        weight: 1
+      - path: character_fps:Group/character_fps:DeformationSystem/character_fps:Root_M/character_fps:Spine1_M/character_fps:Chest_M/character_fps:Scapula_L/character_fps:Shoulder_L/character_fps:Elbow_L/character_fps:Wrist_L/character_fps:Cup_L/character_fps:RingFinger1_L
+        weight: 1
+      - path: character_fps:Group/character_fps:DeformationSystem/character_fps:Root_M/character_fps:Spine1_M/character_fps:Chest_M/character_fps:Scapula_L/character_fps:Shoulder_L/character_fps:Elbow_L/character_fps:Wrist_L/character_fps:Cup_L/character_fps:RingFinger1_L/character_fps:RingFinger2_L
+        weight: 1
+      - path: character_fps:Group/character_fps:DeformationSystem/character_fps:Root_M/character_fps:Spine1_M/character_fps:Chest_M/character_fps:Scapula_L/character_fps:Shoulder_L/character_fps:Elbow_L/character_fps:Wrist_L/character_fps:Cup_L/character_fps:RingFinger1_L/character_fps:RingFinger2_L/character_fps:RingFinger3_L
+        weight: 1
+      - path: character_fps:Group/character_fps:DeformationSystem/character_fps:Root_M/character_fps:Spine1_M/character_fps:Chest_M/character_fps:Scapula_L/character_fps:Shoulder_L/character_fps:Elbow_L/character_fps:Wrist_L/character_fps:Cup_L/character_fps:RingFinger1_L/character_fps:RingFinger2_L/character_fps:RingFinger3_L/character_fps:RingFinger4_L
+        weight: 1
+      - path: character_fps:Group/character_fps:DeformationSystem/character_fps:Root_M/character_fps:Spine1_M/character_fps:Chest_M/character_fps:Scapula_L/character_fps:Shoulder_L/character_fps:Elbow_L/character_fps:Wrist_L/character_fps:IndexFinger1_L
+        weight: 1
+      - path: character_fps:Group/character_fps:DeformationSystem/character_fps:Root_M/character_fps:Spine1_M/character_fps:Chest_M/character_fps:Scapula_L/character_fps:Shoulder_L/character_fps:Elbow_L/character_fps:Wrist_L/character_fps:IndexFinger1_L/character_fps:IndexFinger2_L
+        weight: 1
+      - path: character_fps:Group/character_fps:DeformationSystem/character_fps:Root_M/character_fps:Spine1_M/character_fps:Chest_M/character_fps:Scapula_L/character_fps:Shoulder_L/character_fps:Elbow_L/character_fps:Wrist_L/character_fps:IndexFinger1_L/character_fps:IndexFinger2_L/character_fps:IndexFinger3_L
+        weight: 1
+      - path: character_fps:Group/character_fps:DeformationSystem/character_fps:Root_M/character_fps:Spine1_M/character_fps:Chest_M/character_fps:Scapula_L/character_fps:Shoulder_L/character_fps:Elbow_L/character_fps:Wrist_L/character_fps:IndexFinger1_L/character_fps:IndexFinger2_L/character_fps:IndexFinger3_L/character_fps:IndexFinger4_L
+        weight: 1
+      - path: character_fps:Group/character_fps:DeformationSystem/character_fps:Root_M/character_fps:Spine1_M/character_fps:Chest_M/character_fps:Scapula_L/character_fps:Shoulder_L/character_fps:Elbow_L/character_fps:Wrist_L/character_fps:MiddleFinger1_L
+        weight: 1
+      - path: character_fps:Group/character_fps:DeformationSystem/character_fps:Root_M/character_fps:Spine1_M/character_fps:Chest_M/character_fps:Scapula_L/character_fps:Shoulder_L/character_fps:Elbow_L/character_fps:Wrist_L/character_fps:MiddleFinger1_L/character_fps:MiddleFinger2_L
+        weight: 1
+      - path: character_fps:Group/character_fps:DeformationSystem/character_fps:Root_M/character_fps:Spine1_M/character_fps:Chest_M/character_fps:Scapula_L/character_fps:Shoulder_L/character_fps:Elbow_L/character_fps:Wrist_L/character_fps:MiddleFinger1_L/character_fps:MiddleFinger2_L/character_fps:MiddleFinger3_L
+        weight: 1
+      - path: character_fps:Group/character_fps:DeformationSystem/character_fps:Root_M/character_fps:Spine1_M/character_fps:Chest_M/character_fps:Scapula_L/character_fps:Shoulder_L/character_fps:Elbow_L/character_fps:Wrist_L/character_fps:MiddleFinger1_L/character_fps:MiddleFinger2_L/character_fps:MiddleFinger3_L/character_fps:MiddleFinger4_L
+        weight: 1
+      - path: character_fps:Group/character_fps:DeformationSystem/character_fps:Root_M/character_fps:Spine1_M/character_fps:Chest_M/character_fps:Scapula_L/character_fps:Shoulder_L/character_fps:Elbow_L/character_fps:Wrist_L/character_fps:ThumbFinger1_L
+        weight: 1
+      - path: character_fps:Group/character_fps:DeformationSystem/character_fps:Root_M/character_fps:Spine1_M/character_fps:Chest_M/character_fps:Scapula_L/character_fps:Shoulder_L/character_fps:Elbow_L/character_fps:Wrist_L/character_fps:ThumbFinger1_L/character_fps:ThumbFinger2_L
+        weight: 1
+      - path: character_fps:Group/character_fps:DeformationSystem/character_fps:Root_M/character_fps:Spine1_M/character_fps:Chest_M/character_fps:Scapula_L/character_fps:Shoulder_L/character_fps:Elbow_L/character_fps:Wrist_L/character_fps:ThumbFinger1_L/character_fps:ThumbFinger2_L/character_fps:ThumbFinger3_L
+        weight: 1
+      - path: character_fps:Group/character_fps:DeformationSystem/character_fps:Root_M/character_fps:Spine1_M/character_fps:Chest_M/character_fps:Scapula_L/character_fps:Shoulder_L/character_fps:Elbow_L/character_fps:Wrist_L/character_fps:ThumbFinger1_L/character_fps:ThumbFinger2_L/character_fps:ThumbFinger3_L/character_fps:ThumbFinger4_L
+        weight: 1
+      - path: character_fps:Group/character_fps:DeformationSystem/character_fps:Root_M/character_fps:Spine1_M/character_fps:Chest_M/character_fps:Scapula_L/character_fps:Shoulder_L/character_fps:Elbow_L/character_fps:Wrist_L/character_fps:weapon1_L
+        weight: 1
+      - path: character_fps:Group/character_fps:DeformationSystem/character_fps:Root_M/character_fps:Spine1_M/character_fps:Chest_M/character_fps:Scapula_L/character_fps:Shoulder_L/character_fps:Elbow_L/character_fps:Wrist_L/character_fps:weapon1_L/character_fps:weapon2_L
+        weight: 1
+      - path: character_fps:Group/character_fps:DeformationSystem/character_fps:Root_M/character_fps:Spine1_M/character_fps:Chest_M/character_fps:Scapula_R
+        weight: 1
+      - path: character_fps:Group/character_fps:DeformationSystem/character_fps:Root_M/character_fps:Spine1_M/character_fps:Chest_M/character_fps:Scapula_R/character_fps:Shoulder_R
+        weight: 1
+      - path: character_fps:Group/character_fps:DeformationSystem/character_fps:Root_M/character_fps:Spine1_M/character_fps:Chest_M/character_fps:Scapula_R/character_fps:Shoulder_R/character_fps:Elbow_R
+        weight: 1
+      - path: character_fps:Group/character_fps:DeformationSystem/character_fps:Root_M/character_fps:Spine1_M/character_fps:Chest_M/character_fps:Scapula_R/character_fps:Shoulder_R/character_fps:Elbow_R/character_fps:Wrist_R
+        weight: 1
+      - path: character_fps:Group/character_fps:DeformationSystem/character_fps:Root_M/character_fps:Spine1_M/character_fps:Chest_M/character_fps:Scapula_R/character_fps:Shoulder_R/character_fps:Elbow_R/character_fps:Wrist_R/character_fps:Cup_R
+        weight: 1
+      - path: character_fps:Group/character_fps:DeformationSystem/character_fps:Root_M/character_fps:Spine1_M/character_fps:Chest_M/character_fps:Scapula_R/character_fps:Shoulder_R/character_fps:Elbow_R/character_fps:Wrist_R/character_fps:Cup_R/character_fps:PinkyFinger1_R
+        weight: 1
+      - path: character_fps:Group/character_fps:DeformationSystem/character_fps:Root_M/character_fps:Spine1_M/character_fps:Chest_M/character_fps:Scapula_R/character_fps:Shoulder_R/character_fps:Elbow_R/character_fps:Wrist_R/character_fps:Cup_R/character_fps:PinkyFinger1_R/character_fps:PinkyFinger2_R
+        weight: 1
+      - path: character_fps:Group/character_fps:DeformationSystem/character_fps:Root_M/character_fps:Spine1_M/character_fps:Chest_M/character_fps:Scapula_R/character_fps:Shoulder_R/character_fps:Elbow_R/character_fps:Wrist_R/character_fps:Cup_R/character_fps:PinkyFinger1_R/character_fps:PinkyFinger2_R/character_fps:PinkyFinger3_R
+        weight: 1
+      - path: character_fps:Group/character_fps:DeformationSystem/character_fps:Root_M/character_fps:Spine1_M/character_fps:Chest_M/character_fps:Scapula_R/character_fps:Shoulder_R/character_fps:Elbow_R/character_fps:Wrist_R/character_fps:Cup_R/character_fps:PinkyFinger1_R/character_fps:PinkyFinger2_R/character_fps:PinkyFinger3_R/character_fps:PinkyFinger4_R
+        weight: 1
+      - path: character_fps:Group/character_fps:DeformationSystem/character_fps:Root_M/character_fps:Spine1_M/character_fps:Chest_M/character_fps:Scapula_R/character_fps:Shoulder_R/character_fps:Elbow_R/character_fps:Wrist_R/character_fps:Cup_R/character_fps:RingFinger1_R
+        weight: 1
+      - path: character_fps:Group/character_fps:DeformationSystem/character_fps:Root_M/character_fps:Spine1_M/character_fps:Chest_M/character_fps:Scapula_R/character_fps:Shoulder_R/character_fps:Elbow_R/character_fps:Wrist_R/character_fps:Cup_R/character_fps:RingFinger1_R/character_fps:RingFinger2_R
+        weight: 1
+      - path: character_fps:Group/character_fps:DeformationSystem/character_fps:Root_M/character_fps:Spine1_M/character_fps:Chest_M/character_fps:Scapula_R/character_fps:Shoulder_R/character_fps:Elbow_R/character_fps:Wrist_R/character_fps:Cup_R/character_fps:RingFinger1_R/character_fps:RingFinger2_R/character_fps:RingFinger3_R
+        weight: 1
+      - path: character_fps:Group/character_fps:DeformationSystem/character_fps:Root_M/character_fps:Spine1_M/character_fps:Chest_M/character_fps:Scapula_R/character_fps:Shoulder_R/character_fps:Elbow_R/character_fps:Wrist_R/character_fps:Cup_R/character_fps:RingFinger1_R/character_fps:RingFinger2_R/character_fps:RingFinger3_R/character_fps:RingFinger4_R
+        weight: 1
+      - path: character_fps:Group/character_fps:DeformationSystem/character_fps:Root_M/character_fps:Spine1_M/character_fps:Chest_M/character_fps:Scapula_R/character_fps:Shoulder_R/character_fps:Elbow_R/character_fps:Wrist_R/character_fps:IndexFinger1_R
+        weight: 1
+      - path: character_fps:Group/character_fps:DeformationSystem/character_fps:Root_M/character_fps:Spine1_M/character_fps:Chest_M/character_fps:Scapula_R/character_fps:Shoulder_R/character_fps:Elbow_R/character_fps:Wrist_R/character_fps:IndexFinger1_R/character_fps:IndexFinger2_R
+        weight: 1
+      - path: character_fps:Group/character_fps:DeformationSystem/character_fps:Root_M/character_fps:Spine1_M/character_fps:Chest_M/character_fps:Scapula_R/character_fps:Shoulder_R/character_fps:Elbow_R/character_fps:Wrist_R/character_fps:IndexFinger1_R/character_fps:IndexFinger2_R/character_fps:IndexFinger3_R
+        weight: 1
+      - path: character_fps:Group/character_fps:DeformationSystem/character_fps:Root_M/character_fps:Spine1_M/character_fps:Chest_M/character_fps:Scapula_R/character_fps:Shoulder_R/character_fps:Elbow_R/character_fps:Wrist_R/character_fps:IndexFinger1_R/character_fps:IndexFinger2_R/character_fps:IndexFinger3_R/character_fps:IndexFinger4_R
+        weight: 1
+      - path: character_fps:Group/character_fps:DeformationSystem/character_fps:Root_M/character_fps:Spine1_M/character_fps:Chest_M/character_fps:Scapula_R/character_fps:Shoulder_R/character_fps:Elbow_R/character_fps:Wrist_R/character_fps:MiddleFinger1_R
+        weight: 1
+      - path: character_fps:Group/character_fps:DeformationSystem/character_fps:Root_M/character_fps:Spine1_M/character_fps:Chest_M/character_fps:Scapula_R/character_fps:Shoulder_R/character_fps:Elbow_R/character_fps:Wrist_R/character_fps:MiddleFinger1_R/character_fps:MiddleFinger2_R
+        weight: 1
+      - path: character_fps:Group/character_fps:DeformationSystem/character_fps:Root_M/character_fps:Spine1_M/character_fps:Chest_M/character_fps:Scapula_R/character_fps:Shoulder_R/character_fps:Elbow_R/character_fps:Wrist_R/character_fps:MiddleFinger1_R/character_fps:MiddleFinger2_R/character_fps:MiddleFinger3_R
+        weight: 1
+      - path: character_fps:Group/character_fps:DeformationSystem/character_fps:Root_M/character_fps:Spine1_M/character_fps:Chest_M/character_fps:Scapula_R/character_fps:Shoulder_R/character_fps:Elbow_R/character_fps:Wrist_R/character_fps:MiddleFinger1_R/character_fps:MiddleFinger2_R/character_fps:MiddleFinger3_R/character_fps:MiddleFinger4_R
+        weight: 1
+      - path: character_fps:Group/character_fps:DeformationSystem/character_fps:Root_M/character_fps:Spine1_M/character_fps:Chest_M/character_fps:Scapula_R/character_fps:Shoulder_R/character_fps:Elbow_R/character_fps:Wrist_R/character_fps:ThumbFinger1_R
+        weight: 1
+      - path: character_fps:Group/character_fps:DeformationSystem/character_fps:Root_M/character_fps:Spine1_M/character_fps:Chest_M/character_fps:Scapula_R/character_fps:Shoulder_R/character_fps:Elbow_R/character_fps:Wrist_R/character_fps:ThumbFinger1_R/character_fps:ThumbFinger2_R
+        weight: 1
+      - path: character_fps:Group/character_fps:DeformationSystem/character_fps:Root_M/character_fps:Spine1_M/character_fps:Chest_M/character_fps:Scapula_R/character_fps:Shoulder_R/character_fps:Elbow_R/character_fps:Wrist_R/character_fps:ThumbFinger1_R/character_fps:ThumbFinger2_R/character_fps:ThumbFinger3_R
+        weight: 1
+      - path: character_fps:Group/character_fps:DeformationSystem/character_fps:Root_M/character_fps:Spine1_M/character_fps:Chest_M/character_fps:Scapula_R/character_fps:Shoulder_R/character_fps:Elbow_R/character_fps:Wrist_R/character_fps:ThumbFinger1_R/character_fps:ThumbFinger2_R/character_fps:ThumbFinger3_R/character_fps:ThumbFinger4_R
+        weight: 1
+      - path: character_fps:Group/character_fps:DeformationSystem/character_fps:Root_M/character_fps:Spine1_M/character_fps:Chest_M/character_fps:Scapula_R/character_fps:Shoulder_R/character_fps:Elbow_R/character_fps:Wrist_R/character_fps:weapon1_R
+        weight: 1
+      - path: character_fps:Group/character_fps:DeformationSystem/character_fps:Root_M/character_fps:Spine1_M/character_fps:Chest_M/character_fps:Scapula_R/character_fps:Shoulder_R/character_fps:Elbow_R/character_fps:Wrist_R/character_fps:weapon1_R/character_fps:weapon2_R
+        weight: 1
+      - path: character_fps:Group/character_fps:Geometry
+        weight: 1
+      - path: character_fps:Group/character_fps:Geometry/character_fps:basechar
+        weight: 1
+      - path: character_fps:Group/character_fps:Geometry/character_fps:basechar/character_fps:arms
+        weight: 1
+      - path: character_fps:Group/character_fps:Geometry/character_fps:basechar/character_fps:shirt4
+        weight: 1
+      - path: character_fps:Group/character_fps:Geometry/character_fps:basechar/character_fps:shirt4/character_fps:polySurface2
+        weight: 1
+      - path: character_fps:Group/character_fps:Geometry/character_fps:basechar/character_fps:shirt4/character_fps:polySurface3
+        weight: 1
+      - path: character_fps:Group/character_fps:Geometry/character_fps:basechar/character_fps:shirt4/character_fps:transform1
+        weight: 1
+      - path: character_fps:weapons
+        weight: 1
+      - path: character_fps:weapons/character_fps:esponja
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 300.9
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
