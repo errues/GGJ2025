@@ -68,6 +68,10 @@ PrefabInstance:
       propertyPath: Model
       value: 
       objectReference: {fileID: 11400000, guid: 0c96ae9246313db478a3a43ad1970f6b, type: 2}
+    - target: {fileID: 6239744720216668124, guid: f7e1bec179c57e944b19b272cfc9b373, type: 3}
+      propertyPath: Animator
+      value: 
+      objectReference: {fileID: 5130878982732705683}
     - target: {fileID: 7063418937792530540, guid: f7e1bec179c57e944b19b272cfc9b373, type: 3}
       propertyPath: m_Name
       value: Hand
@@ -147,7 +151,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b5960ba3f71a5524ab289dbb03e9c549, type: 3}
       propertyPath: m_Name
-      value: Character_RIG_Hand
+      value: Character_Hand_RIG
       objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: b5960ba3f71a5524ab289dbb03e9c549, type: 3}
       propertyPath: m_Controller
@@ -161,5 +165,10 @@ PrefabInstance:
 --- !u!4 &1284836050122913257 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b5960ba3f71a5524ab289dbb03e9c549, type: 3}
+  m_PrefabInstance: {fileID: 1611759706824266242}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &5130878982732705683 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: b5960ba3f71a5524ab289dbb03e9c549, type: 3}
   m_PrefabInstance: {fileID: 1611759706824266242}
   m_PrefabAsset: {fileID: 0}
