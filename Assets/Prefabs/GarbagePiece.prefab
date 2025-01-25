@@ -51,6 +51,7 @@ MonoBehaviour:
   modelParent: {fileID: 7712033851764591561}
   appearSound: {fileID: 11400000, guid: 40a19440832ad3740b0a367a3e9e1cea, type: 2}
   cleanSound: {fileID: 11400000, guid: 3d48a6fb9e2a2274aac6b9787f6462a7, type: 2}
+  hygieneValue: 1
 --- !u!95 &8414347548730746451
 Animator:
   serializedVersion: 7
@@ -106,7 +107,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: -513928697016906890, guid: bb61557eeb25d0449a4475b6ee104c01, type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
