@@ -49,6 +49,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   modelParent: {fileID: 7712033851764591561}
+  requiredWeapon: {fileID: 11400000, guid: 0c96ae9246313db478a3a43ad1970f6b, type: 2}
   appearSound: {fileID: 11400000, guid: 40a19440832ad3740b0a367a3e9e1cea, type: 2}
   cleanSound: {fileID: 11400000, guid: 3d48a6fb9e2a2274aac6b9787f6462a7, type: 2}
   hygieneValue: 1

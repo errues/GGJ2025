@@ -2,6 +2,7 @@ using UnityEngine;
 
 public abstract class Dirt : MonoBehaviour, IInteractable {
     [SerializeField] protected Transform modelParent;
+    [SerializeField] private WeaponModel requiredWeapon;
 
     [Header("Sounds")]
     [SerializeField] protected ScriptableSound appearSound;
@@ -13,11 +14,13 @@ public abstract class Dirt : MonoBehaviour, IInteractable {
     protected Animator animator;
     protected DirtGenerator garbageGenerator;
     protected AudioSource audioSource;
+    private CharacterWeaponHandler weaponHandler;
 
     private void Awake() {
         animator = GetComponent<Animator>();
         garbageGenerator = GetComponentInParent<DirtGenerator>();
         audioSource = GetComponent<AudioSource>();
+        weaponHandler = FindFirstObjectByType<CharacterWeaponHandler>();
     }
 
     public abstract void CancelInteract();
@@ -26,7 +29,11 @@ public abstract class Dirt : MonoBehaviour, IInteractable {
     protected abstract void AddHygiene();
 
     public void Interact() {
-        Disappear();
+        if (weaponHandler.Current.Model == requiredWeapon) {
+            Disappear();
+        } else {
+            // Feedback de acción equivocada
+        }
     }
 
     public void Appear() {
