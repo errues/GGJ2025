@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class GarbagePiece : MonoBehaviour, IInteractable {
     [SerializeField] private Transform modelParent;
+    [SerializeField] private int hygieneValue = 1;
 
     [Header("Sounds")]
     [SerializeField] private ScriptableSound appearSound;
@@ -37,7 +38,7 @@ public class GarbagePiece : MonoBehaviour, IInteractable {
         animator.SetTrigger("Appear");
         modelParent.Rotate(0, Random.Range(0f, 360f), 0);
         audioSource.PlayOneShot(appearSound.GetRandomClip());
-        // Sumar al medidor general de suciedad
+        MessageBus.Instance.Notify("ReduceHygiene", hygieneValue);
     }
 
     public void Disappear() {
@@ -45,7 +46,7 @@ public class GarbagePiece : MonoBehaviour, IInteractable {
         modelParent.GetChild(randomModelIndex).gameObject.SetActive(false);
         garbageGenerator.SetGarbagePieceInactive(this);
         audioSource.PlayOneShot(cleanSound.GetRandomClip());
-        // Restar al medidor general de suciedad
+        MessageBus.Instance.Notify("AddHygiene", hygieneValue);
     }
 
     private void OnDrawGizmos() {
