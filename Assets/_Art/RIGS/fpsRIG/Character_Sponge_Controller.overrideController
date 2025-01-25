@@ -8,4 +8,14 @@ AnimatorOverrideController:
   m_PrefabAsset: {fileID: 0}
   m_Name: Character_Sponge_Controller
   m_Controller: {fileID: 9100000, guid: 1ad351c89e584d6479b54cff3c777cd3, type: 2}
-  m_Clips: []
+  m_Clips:
+  - m_OriginalClip: {fileID: 2060030879607851157, guid: 7fef82a34de0ad8438fe012d9d805dc5, type: 3}
+    m_OverrideClip: {fileID: 9096665902702222300, guid: 8572a0e555602064abcf00f5ff24480f, type: 3}
+  - m_OriginalClip: {fileID: -6609762813277203832, guid: 7fef82a34de0ad8438fe012d9d805dc5, type: 3}
+    m_OverrideClip: {fileID: 8041526342111797201, guid: 8572a0e555602064abcf00f5ff24480f, type: 3}
+  - m_OriginalClip: {fileID: -6092677674784930087, guid: 7fef82a34de0ad8438fe012d9d805dc5, type: 3}
+    m_OverrideClip: {fileID: 1964654877172106349, guid: 8572a0e555602064abcf00f5ff24480f, type: 3}
+  - m_OriginalClip: {fileID: 5576464561067515943, guid: 7fef82a34de0ad8438fe012d9d805dc5, type: 3}
+    m_OverrideClip: {fileID: -2081710806740822669, guid: 8572a0e555602064abcf00f5ff24480f, type: 3}
+  - m_OriginalClip: {fileID: 8279609146070918235, guid: 7fef82a34de0ad8438fe012d9d805dc5, type: 3}
+    m_OverrideClip: {fileID: -1273316077008629674, guid: 8572a0e555602064abcf00f5ff24480f, type: 3}
