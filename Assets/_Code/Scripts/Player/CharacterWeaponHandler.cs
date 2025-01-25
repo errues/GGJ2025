@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(PlayerInput))]
@@ -13,6 +14,7 @@ public class CharacterWeaponHandler : MonoBehaviour
     [SerializeField] private Weapon[] _weapons;
 
     public Weapon Current => _weapons[_currentWeaponIndex];
+    public UnityAction<Weapon> OnWeaponChanged;
 
 
     private void Awake()
@@ -31,6 +33,8 @@ public class CharacterWeaponHandler : MonoBehaviour
         _weapons[_currentWeaponIndex].gameObject.SetActive(false);
         _currentWeaponIndex = (_currentWeaponIndex - 1 + _totalWeaponsAmount) % _totalWeaponsAmount;
         _weapons[_currentWeaponIndex].gameObject.SetActive(true);
+
+        OnWeaponChanged(Current);
     }
 
     private void OnNext(InputValue _)
@@ -38,6 +42,8 @@ public class CharacterWeaponHandler : MonoBehaviour
         _weapons[_currentWeaponIndex].gameObject.SetActive(false);
         _currentWeaponIndex = (_currentWeaponIndex + 1 + _totalWeaponsAmount) % _totalWeaponsAmount;
         _weapons[_currentWeaponIndex].gameObject.SetActive(true);
+
+        OnWeaponChanged(Current);
     }
 }
 
