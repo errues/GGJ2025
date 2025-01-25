@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 144020650906516273}
   - component: {fileID: 6051271434439991625}
   - component: {fileID: 9011849020550228879}
+  - component: {fileID: 5271908549268435642}
   m_Layer: 0
   m_Name: Silla Blockout
   m_TagString: Untagged
@@ -1740,7 +1741,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 30aa2b785f3900d4c845d969c58bdea1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1792,3 +1793,18 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!114 &5271908549268435642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5404390224321934737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7449fb883ef6d6d439e85c51b19f4628, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _model: {fileID: 11400000, guid: b3ff0db11c33fd84687b3b79419febe9, type: 2}
+  _requiredWeapon: {fileID: 11400000, guid: c8165d5dad341154bb578261fcd184c5, type: 2}
+  _renderer: {fileID: 144020650906516273}
