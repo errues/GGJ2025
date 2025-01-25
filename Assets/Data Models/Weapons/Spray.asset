@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: 
   Prefab: {fileID: 0}
-  PreviewSprite: {fileID: 0}
+  PreviewSprite: {fileID: 21300000, guid: 3f7916bce439a874fa741710153079ba, type: 3}
   UsabilityTimeInSeconds: 0
   RechargingTimeInSeconds: 0
   AnimationTrigger: 
