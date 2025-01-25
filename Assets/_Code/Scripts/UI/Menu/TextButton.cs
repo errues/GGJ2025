@@ -7,7 +7,7 @@ public class TextButton : MonoBehaviour, IPointerClickHandler
 {
     [SerializeField] private TextMeshPro textComponent;
 
-    [SerializeField] public Scene sceneToOpen;
+    [SerializeField] public string sceneName;
 
     private void Awake()
     {
@@ -22,7 +22,7 @@ public class TextButton : MonoBehaviour, IPointerClickHandler
         switch (gameObject.name)
         {
             case "Play":
-                SceneManager.LoadScene(sceneToOpen.name);
+                SceneManager.LoadScene(sceneName);
             
             break;
 
