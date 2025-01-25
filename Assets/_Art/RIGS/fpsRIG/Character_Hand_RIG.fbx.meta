@@ -3,7 +3,17 @@ guid: b5960ba3f71a5524ab289dbb03e9c549
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: character_fps_lambert3
+    second: {fileID: 2100000, guid: 7263c64bd4c997543ba695d573da7829, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: standardSurface1
+    second: {fileID: 2100000, guid: 6fb3ad2c59f9b16449d53a17d1943133, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -88,7 +98,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.089999996
+    globalScale: 9
     rootMotionBoneName: character_fps:Root_M
     hasTranslationDoF: 0
     hasExtraRoot: 0
