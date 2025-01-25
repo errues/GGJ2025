@@ -1,22 +1,32 @@
-﻿using UnityEngine;
+﻿using System;
+using System.Collections;
+using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
     public WeaponModel Model;
+    public Animator Animator { get; private set; }
+
+    private void Awake()
+    {
+        Animator = GetComponentInChildren<Animator>();
+    }
+
+
+    public void Attack()
+    {
+        Animator.SetTrigger("Attack");
+    }
+
+    public IEnumerator Hide()
+    {        
+        Animator.SetTrigger("Hide");
+        yield return new WaitForSeconds(1);
+        Animator.gameObject.SetActive(false);
+    }
+
+    internal void Show()
+    {
+        Animator.gameObject.SetActive(true);
+    }
 }
-
-
-
-
-//public class PickeableWeapon : IInteractable
-//{
-//    public bool CanInteract()
-//    {
-//        throw new System.NotImplementedException();
-//    }
-
-//    public void Interact()
-//    {
-//        throw new System.NotImplementedException();
-//    }
-//}
