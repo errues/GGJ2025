@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Threading.Tasks;
+using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
@@ -18,34 +19,35 @@ public class CharacterWeaponHandler : MonoBehaviour
     private void Awake()
     {
         _currentWeaponAnimator = Current.Animator;
+        _playerInput.actions["Attack"].performed += OnAttack;
+        _playerInput.actions["Previous"].performed += OnPrevious;
+        _playerInput.actions["Next"].performed += OnNext;
     }
 
-    private void OnAttack(InputValue _)
+    private void OnAttack(InputAction.CallbackContext context)
     {
         Current.Attack();
     }
 
-    private void OnPrevious(InputValue _)
+    private async void OnPrevious(InputAction.CallbackContext context)
     {
         Current.Hide();
+        await Task.Delay(1000);
+        Current.Animator.gameObject.SetActive(false);
 
-        _weapons[_currentWeaponIndex].gameObject.SetActive(false);
         _currentWeaponIndex = (_currentWeaponIndex - 1 + _totalWeaponsAmount) % _totalWeaponsAmount;
-
         Current.Show();
-
-
-        _weapons[_currentWeaponIndex].gameObject.SetActive(true);
-
         OnWeaponChanged(Current);
     }
 
-    private void OnNext(InputValue _)
+    private async void OnNext(InputAction.CallbackContext context)
     {
-        _weapons[_currentWeaponIndex].gameObject.SetActive(false);
+        Current.Hide();
+        await Task.Delay(1000);
+        Current.Animator.gameObject.SetActive(false);
+        
         _currentWeaponIndex = (_currentWeaponIndex + 1 + _totalWeaponsAmount) % _totalWeaponsAmount;
-        _weapons[_currentWeaponIndex].gameObject.SetActive(true);
-
+        Current.Show();
         OnWeaponChanged(Current);
     }
 }

@@ -9,7 +9,7 @@ public class Weapon : MonoBehaviour
 
     private void Awake()
     {
-        Animator = GetComponentInChildren<Animator>();
+        Animator = GetComponentInChildren<Animator>(true);
     }
 
 
@@ -18,11 +18,9 @@ public class Weapon : MonoBehaviour
         Animator.SetTrigger("Attack");
     }
 
-    public IEnumerator Hide()
-    {        
+    public void Hide()
+    {
         Animator.SetTrigger("Hide");
-        yield return new WaitForSeconds(1);
-        Animator.gameObject.SetActive(false);
     }
 
     internal void Show()
