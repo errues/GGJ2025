@@ -3,8 +3,13 @@ using UnityEngine;
 public class GarbagePiece : MonoBehaviour, IInteractable {
     [SerializeField] private Transform modelParent;
 
+    [Header("Sounds")]
+    [SerializeField] private ScriptableSound appearSound;
+    [SerializeField] private ScriptableSound cleanSound;
+
     private Animator animator;
     private GarbageGenerator garbageGenerator;
+    private AudioSource audioSource;
 
     private int randomModelIndex;
     private bool active;
@@ -12,6 +17,7 @@ public class GarbagePiece : MonoBehaviour, IInteractable {
     private void Awake() {
         animator = GetComponent<Animator>();
         garbageGenerator = GetComponentInParent<GarbageGenerator>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     public void CancelInteract() { }
@@ -30,6 +36,7 @@ public class GarbagePiece : MonoBehaviour, IInteractable {
         modelParent.GetChild(randomModelIndex).gameObject.SetActive(true);
         animator.SetTrigger("Appear");
         modelParent.Rotate(0, Random.Range(0f, 360f), 0);
+        audioSource.PlayOneShot(appearSound.GetRandomClip());
         // Sumar al medidor general de suciedad
     }
 
@@ -37,6 +44,7 @@ public class GarbagePiece : MonoBehaviour, IInteractable {
         active = false;
         modelParent.GetChild(randomModelIndex).gameObject.SetActive(false);
         garbageGenerator.SetGarbagePieceInactive(this);
+        audioSource.PlayOneShot(cleanSound.GetRandomClip());
         // Restar al medidor general de suciedad
     }
 
