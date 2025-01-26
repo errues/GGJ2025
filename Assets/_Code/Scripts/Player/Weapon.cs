@@ -1,8 +1,7 @@
 ﻿using System.Threading.Tasks;
 using UnityEngine;
 
-public class Weapon : Dirtable
-{
+public class Weapon : Dirtable {
     public WeaponModel Model;
     public Animator Animator;
     [Space]
@@ -14,13 +13,11 @@ public class Weapon : Dirtable
 
     protected override int MaxDirtLevel => Model.MaxDirtLevel;
 
-    private void Start()
-    {
+    private void Start() {
         _dirtLevel = 0;
     }
 
-    public async void Attack()
-    {
+    public async virtual void Attack() {
         if (_isAttacking) return;
 
         _isAttacking = true;
@@ -31,42 +28,33 @@ public class Weapon : Dirtable
         _isAttacking = false;
     }
 
-    public void Hide()
-    {
+    public void Hide() {
         Animator.SetTrigger("Hide");
     }
 
     [ContextMenu("Clean")]
-    public void Clean()
-    {
+    public void Clean() {
         _dirtLevel = MinDirtLevel;
         UpdateView();
     }
 
-    protected override void UpdateView()
-    {
+    protected override void UpdateView() {
         if (MidDirtyGO == null || FullDirtyGO == null) return;
 
         threshold = Model.MaxDirtLevel / 3;
-        if (_dirtLevel <= threshold)
-        {
+        if (_dirtLevel <= threshold) {
             MidDirtyGO.SetActive(false);
             FullDirtyGO.SetActive(false);
-        }
-        else if (_dirtLevel > threshold && _dirtLevel <= threshold * 2)
-        {
+        } else if (_dirtLevel > threshold && _dirtLevel <= threshold * 2) {
             MidDirtyGO.SetActive(true);
             FullDirtyGO.SetActive(false);
-        }
-        else
-        {
+        } else {
             MidDirtyGO.SetActive(false);
             FullDirtyGO.SetActive(true);
         }
     }
 
-    internal void Show()
-    {
+    internal void Show() {
         Animator.gameObject.SetActive(true);
     }
 }

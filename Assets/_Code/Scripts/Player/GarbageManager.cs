@@ -8,14 +8,17 @@ public class GarbageManager : MonoBehaviour {
     private int currentGarbageAmount;
 
     public static GarbageManager Instance { get; private set; }
+    public bool FreePickups { get; set; }
 
     private void Awake() {
         Instance = this;
     }
 
     public void PickUpGarbage() {
-        currentGarbageAmount++;
-        UpdateBar();
+        if (!FreePickups) {
+            currentGarbageAmount++;
+            UpdateBar();
+        }
     }
 
     public void EmptyGarbage() {

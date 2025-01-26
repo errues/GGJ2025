@@ -19,10 +19,10 @@ public class MenuController : MonoBehaviour
      private void Awake() {
         playerInput = GetComponent<PlayerInput>();
 
-        // Asegúrate de que el video esté configurado
+        // Asegï¿½rate de que el video estï¿½ configurado
         if (videoPlayer != null)
         {
-            // Suscríbete al evento loopPointReached
+            // Suscrï¿½bete al evento loopPointReached
             videoPlayer.loopPointReached += OnVideoEnd;
         }
     }
@@ -59,7 +59,7 @@ public class MenuController : MonoBehaviour
 
     void OnDestroy()
     {
-        // Desuscríbete del evento para evitar errores
+        // Desuscrï¿½bete del evento para evitar errores
         if (videoPlayer != null)
         {
             videoPlayer.loopPointReached -= OnVideoEnd;
@@ -75,7 +75,7 @@ public class MenuController : MonoBehaviour
     {
         if (rawImage == null)
         {
-            Debug.LogError("RawImage es nulo. Asegúrate de asignar un RawImage.");
+            Debug.LogError("RawImage es nulo. Asegï¿½rate de asignar un RawImage.");
             yield break;
         }
 
