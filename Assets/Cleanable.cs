@@ -2,15 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Cleanable : Dirtable, IInteractable {
+public abstract class Cleanable : Dirtable, IInteractable
+{
     [SerializeField] private CleanableModel _model;
-    [SerializeField] private WeaponModel _requiredWeapon;
-    [Space]
-    [SerializeField] private Renderer _renderer;
+    [SerializeField] protected WeaponModel _requiredWeapon;
 
     private Dictionary<int, Color> _colorBindings = new();
-
-    private CharacterWeaponHandler _weaponHandler;
+    protected CharacterWeaponHandler _weaponHandler;
     private Coroutine _dirtUpdateCoroutine;
 
     protected override int MaxDirtLevel => 2;
@@ -28,18 +26,23 @@ public class Cleanable : Dirtable, IInteractable {
         UpdateView();
     }
 
-    public bool CanInteract() {
-        return _weaponHandler.Current.Model == _requiredWeapon;
-    }
+    public abstract bool CanInteract();
+    //{
+        //return _weaponHandler.Current.Model == _requiredWeapon;
+    //}
 
-    public void Interact() {
+    public virtual void Interact()
+    {
         ReduceDirtLevel();
     }
 
 
 
-    protected override void UpdateView() {
-        _renderer.material.SetColor("_BaseColor", _colorBindings[_dirtLevel]);
+    protected override void UpdateView()
+    {
+        //_renderer.material.SetColor("_BaseColor", _colorBindings[_dirtLevel]);
+
+
 
         if (_dirtUpdateCoroutine != null) {
             StopCoroutine(_dirtUpdateCoroutine);
