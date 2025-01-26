@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: VfxLibrary
   m_EditorClassIdentifier: 
   VfxCollection:
-  - Id: Plas
-    Vfx: {fileID: 0}
+  - Id: WaterSplash
+    Vfx: {fileID: 7620216147386611102, guid: 8a9ce8c588b0e2c4fa567c940b82044a, type: 3}
