@@ -340,6 +340,26 @@ PrefabInstance:
     m_TransformParent: {fileID: 7231673147431082130}
     m_Modifications:
     - target: {fileID: 2236939889303703976, guid: 0ad66265e6c368840af6883905612f7d, type: 3}
+      propertyPath: ShapeModule.angle
+      value: 9.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 2236939889303703976, guid: 0ad66265e6c368840af6883905612f7d, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2236939889303703976, guid: 0ad66265e6c368840af6883905612f7d, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2236939889303703976, guid: 0ad66265e6c368840af6883905612f7d, type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2236939889303703976, guid: 0ad66265e6c368840af6883905612f7d, type: 3}
+      propertyPath: InitialModule.startLifetime.minScalar
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2236939889303703976, guid: 0ad66265e6c368840af6883905612f7d, type: 3}
       propertyPath: ColorModule.gradient.maxGradient.key0.b
       value: 0.30980393
       objectReference: {fileID: 0}
