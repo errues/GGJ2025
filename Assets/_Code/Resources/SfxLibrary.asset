@@ -17,3 +17,5 @@ MonoBehaviour:
     Sfx: {fileID: 8300000, guid: 5ef3e8d9af538c54b87e486b1319f63e, type: 3}
   - Id: Mop1
     Sfx: {fileID: 8300000, guid: e0a838dd306f7ce4aa22244813c26119, type: 3}
+  - Id: Cleaned2
+    Sfx: {fileID: 8300000, guid: 3615f71efec66d7439ed3d918ff0c77c, type: 3}
