@@ -64,6 +64,7 @@ public class CharacterWeaponHandler : MonoBehaviour {
         yield return new WaitForSeconds(1);
         Current.Animator.gameObject.SetActive(false);
 
+        _usingSpecialWeapon = false;
         _currentWeaponIndex = (index + _totalWeaponsAmount) % _totalWeaponsAmount;
 
         Current.Show();
@@ -72,15 +73,14 @@ public class CharacterWeaponHandler : MonoBehaviour {
     }
 
     [ButtonMethod]
-    private void SetSpecialWeapon() {
+    public void SetSpecialWeapon() {
         if (_changeWeaponCoroutine != null)
             StopCoroutine(_changeWeaponCoroutine);
 
         StartCoroutine(ChangeToSpecialWeapon());
     }
 
-    private void FinishSpecialWeapon() {
-        _usingSpecialWeapon = false;
+    public void FinishSpecialWeapon() {
         _changeWeaponCoroutine = StartCoroutine(ChangeWeaponIndex(_currentWeaponIndex));
     }
 
