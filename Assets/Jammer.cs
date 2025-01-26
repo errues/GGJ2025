@@ -65,7 +65,7 @@ public class Jammer : Cleanable
 
     private void Start()
     {
-        float[] values = new float[] { 0, 0.33f, 0.66f, 1 };
+        float[] values = new float[] { 0, 0.34f, 0.67f, 1 };
         int rnd = Random.Range(0, values.Length);
         _animator.SetFloat("Idle", rnd);
     }
