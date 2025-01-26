@@ -35,7 +35,7 @@ public class CharacterMovement : MonoBehaviour
         interpolatedMovementVelocity = Vector2.Lerp(interpolatedMovementVelocity, currentMovementVelocity, lerpSpeed * Time.deltaTime);
 
         // Actualiza el par�metro del Animator con el valor suavizado
-        _weaponHandler.CurrentWeaponAnimator.SetFloat("Speed", interpolatedMovementVelocity.magnitude);
+        _weaponHandler?.CurrentWeaponAnimator?.SetFloat("Speed", interpolatedMovementVelocity.magnitude);
     }
 
     private void FixedUpdate()
