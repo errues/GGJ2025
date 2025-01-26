@@ -24,6 +24,7 @@ public abstract class Dirt : MonoBehaviour, IInteractable {
     }
 
     public abstract void CancelInteract();
+    public abstract void EnteredInteractionRange();
     public abstract bool CanInteract();
     protected abstract void ReduceHygiene();
     protected abstract void AddHygiene();

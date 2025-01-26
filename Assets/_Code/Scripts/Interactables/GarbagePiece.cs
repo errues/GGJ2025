@@ -11,6 +11,11 @@ public class GarbagePiece : Dirt {
             modelOutline.enabled = false;
     }
 
+    public override void EnteredInteractionRange() {
+        if (modelOutline)
+            modelOutline.enabled = true;
+    }
+
     public override bool CanInteract() {
         if (modelOutline)
             modelOutline.enabled = true;
@@ -33,7 +38,7 @@ public class GarbagePiece : Dirt {
     protected override bool CanDisappear() {
         return weaponHandler.Current.Model == requiredWeapon && GarbageManager.Instance.CanSpaceGarbage();
     }
-    
+
     public override void Appear() {
         base.Appear();
 

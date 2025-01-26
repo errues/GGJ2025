@@ -81,6 +81,7 @@ GameObject:
   - component: {fileID: 6600898151720117821}
   - component: {fileID: 3311599950073119327}
   - component: {fileID: 7284637555243767634}
+  - component: {fileID: 2647028006552200602}
   m_Layer: 0
   m_Name: Model
   m_TagString: Untagged
@@ -1837,3 +1838,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4273741485149434610}
   m_Mesh: {fileID: 0}
+--- !u!114 &2647028006552200602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4273741485149434610}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24a02ce7e0751584f9df445e3740e21d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineRendererFeature: {fileID: 2189377441168278891, guid: f288ae1f4751b564a96ac7587541f7a2, type: 2}
+  outlineRenderers:
+  - {fileID: 3311599950073119327}

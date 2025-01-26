@@ -19,6 +19,7 @@ public class Puddle : Dirt {
     }
 
     public override void CancelInteract() { }
+    public override void EnteredInteractionRange() { }
 
     public override bool CanInteract() {
         return active;
