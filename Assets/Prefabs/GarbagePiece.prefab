@@ -265,6 +265,7 @@ GameObject:
   - component: {fileID: 159937960137841054}
   - component: {fileID: 2870474475906617186}
   - component: {fileID: 1365503390342763760}
+  - component: {fileID: 6169165250673066751}
   m_Layer: 0
   m_Name: Model3
   m_TagString: Untagged
@@ -340,6 +341,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &6169165250673066751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2375197673406698599}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24a02ce7e0751584f9df445e3740e21d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineRendererFeature: {fileID: 2189377441168278891, guid: f288ae1f4751b564a96ac7587541f7a2, type: 2}
+  outlineRenderers:
+  - {fileID: 1365503390342763760}
 --- !u!1 &7290892547030863507
 GameObject:
   m_ObjectHideFlags: 0
@@ -351,6 +367,7 @@ GameObject:
   - component: {fileID: 6279529073662807608}
   - component: {fileID: 500206618833052894}
   - component: {fileID: 8681827608506340367}
+  - component: {fileID: 2070786174654105303}
   m_Layer: 0
   m_Name: Model2
   m_TagString: Untagged
@@ -426,6 +443,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &2070786174654105303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7290892547030863507}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24a02ce7e0751584f9df445e3740e21d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineRendererFeature: {fileID: 2189377441168278891, guid: f288ae1f4751b564a96ac7587541f7a2, type: 2}
+  outlineRenderers:
+  - {fileID: 8681827608506340367}
 --- !u!1 &7535103164318667136
 GameObject:
   m_ObjectHideFlags: 0
@@ -437,6 +469,7 @@ GameObject:
   - component: {fileID: 7013549673592935588}
   - component: {fileID: 3853238813551631799}
   - component: {fileID: 6084745168740388896}
+  - component: {fileID: 4917774904519224597}
   m_Layer: 0
   m_Name: Model1
   m_TagString: Untagged
@@ -512,3 +545,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &4917774904519224597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7535103164318667136}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24a02ce7e0751584f9df445e3740e21d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineRendererFeature: {fileID: 2189377441168278891, guid: f288ae1f4751b564a96ac7587541f7a2, type: 2}
+  outlineRenderers:
+  - {fileID: 6084745168740388896}

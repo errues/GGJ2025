@@ -1,31 +1,24 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CharacterInteraction : MonoBehaviour
-{
+public class CharacterInteraction : MonoBehaviour {
     [SerializeField] private float raycastDistance;
     [SerializeField] private Transform cameraTransform;
     [SerializeField] private Image interactionSprite;
 
     private IInteractable currentInteractable;
 
-    void Update()
-    {
-        if (Physics.Raycast(cameraTransform.position, cameraTransform.forward, out RaycastHit hit, raycastDistance))
-        {
-            if (hit.transform.TryGetComponent(out IInteractable interactable))
-            {
+    void Update() {
+        if (Physics.Raycast(cameraTransform.position, cameraTransform.forward, out RaycastHit hit, raycastDistance)) {
+            if (hit.transform.TryGetComponent(out IInteractable interactable)) {
                 currentInteractable = interactable;
-            }
-            else
-            {
+                currentInteractable.EnteredInteractionRange();
+            } else {
                 if (currentInteractable != null)
                     currentInteractable.CancelInteract();
                 currentInteractable = null;
             }
-        }
-        else
-        {
+        } else {
             if (currentInteractable != null)
                 currentInteractable.CancelInteract();
             currentInteractable = null;
@@ -33,21 +26,17 @@ public class CharacterInteraction : MonoBehaviour
 
 
         bool showSprite = currentInteractable != null && currentInteractable.CanInteract();
-        interactionSprite.color = showSprite? Color.red : Color.white;
+        interactionSprite.color = showSprite ? Color.red : Color.white;
     }
 
-    private void OnInteract()
-    {
-        if (currentInteractable != null && currentInteractable.CanInteract())
-        {
+    private void OnInteract() {
+        if (currentInteractable != null && currentInteractable.CanInteract()) {
             currentInteractable.Interact();
         }
     }
 
-    private void OnAttack()
-    {
-        if (currentInteractable != null && currentInteractable.CanInteract())
-        {
+    private void OnAttack() {
+        if (currentInteractable != null && currentInteractable.CanInteract()) {
             currentInteractable.Interact();
         }
     }

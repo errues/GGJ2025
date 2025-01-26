@@ -2,7 +2,7 @@ using UnityEngine;
 
 public abstract class Dirt : MonoBehaviour, IInteractable {
     [SerializeField] protected Transform modelParent;
-    [SerializeField] private WeaponModel requiredWeapon;
+    [SerializeField] protected WeaponModel requiredWeapon;
 
     [Header("Sounds")]
     [SerializeField] protected ScriptableSound appearSound;
@@ -14,7 +14,7 @@ public abstract class Dirt : MonoBehaviour, IInteractable {
     protected Animator animator;
     protected DirtGenerator garbageGenerator;
     protected AudioSource audioSource;
-    private CharacterWeaponHandler weaponHandler;
+    protected CharacterWeaponHandler weaponHandler;
 
     private void Awake() {
         animator = GetComponent<Animator>();
@@ -24,19 +24,26 @@ public abstract class Dirt : MonoBehaviour, IInteractable {
     }
 
     public abstract void CancelInteract();
+    public abstract void EnteredInteractionRange();
     public abstract bool CanInteract();
     protected abstract void ReduceHygiene();
     protected abstract void AddHygiene();
+    protected abstract bool CanDisappear();
+    public abstract void Interact();
 
-    public void Interact() {
-        if (weaponHandler.Current.Model == requiredWeapon) {
-            Disappear();
-        } else {
-            // Feedback de acción equivocada
+    protected virtual void Disappear() {
+        active = false;
+        modelParent.GetChild(tier).gameObject.SetActive(false);
+        garbageGenerator.SetDirtInactive(this);
+
+        if (cleanSound != null) {
+            audioSource.PlayOneShot(cleanSound.GetRandomClip());
         }
+
+        AddHygiene();
     }
 
-    public void Appear() {
+    public virtual void Appear() {
         active = true;
         tier = Random.Range(0, modelParent.childCount);
         modelParent.GetChild(tier).gameObject.SetActive(true);
@@ -48,17 +55,5 @@ public abstract class Dirt : MonoBehaviour, IInteractable {
         }
 
         ReduceHygiene();
-    }
-
-    public void Disappear() {
-        active = false;
-        modelParent.GetChild(tier).gameObject.SetActive(false);
-        garbageGenerator.SetDirtInactive(this);
-
-        if (cleanSound != null) {
-            audioSource.PlayOneShot(cleanSound.GetRandomClip());
-        }
-
-        AddHygiene();
     }
 }

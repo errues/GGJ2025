@@ -3,4 +3,5 @@ public interface IInteractable {
     public bool CanInteract();
 
     public void CancelInteract();
+    public void EnteredInteractionRange();
 }

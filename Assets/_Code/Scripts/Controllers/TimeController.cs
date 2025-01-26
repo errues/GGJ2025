@@ -10,6 +10,8 @@ public class TimeController : MonoBehaviour {
     private float remainingTime;
     private bool timerActive = true;
 
+    public float HypotheticalTime { get; private set; }
+
     private void Awake() {
         remainingTime = gameDuration;
     }
@@ -28,9 +30,9 @@ public class TimeController : MonoBehaviour {
     }
 
     private void UpdateTimerText() {
-        float hypotheticalTime = remainingTime * (RealtimeDuration / gameDuration);
-        int hours = (int)hypotheticalTime / 3600;
-        int minutes = ((int)hypotheticalTime - hours * 3600) / 60;
+        HypotheticalTime = remainingTime * (RealtimeDuration / gameDuration);
+        int hours = (int)HypotheticalTime / 3600;
+        int minutes = ((int)HypotheticalTime - hours * 3600) / 60;
         text.text = (hours < 10 ? "0" : "") + hours + ":" + (minutes < 10 ? "0" : "") + minutes;
     }
 }

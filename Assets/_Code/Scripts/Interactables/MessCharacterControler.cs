@@ -56,7 +56,7 @@ public class MessCharacterControler : MonoBehaviour, IInteractable {
 
     // Coroutine to gradually decrease the dirty level
     public void CleanDirtyCharacter() {
-        
+
         if (mDirtyLevel <= 0) {
             if (mCleaningDirtyNPC)
                 mCleaningDirtyNPC = false;
@@ -85,6 +85,7 @@ public class MessCharacterControler : MonoBehaviour, IInteractable {
         MessNPC();
     }
 
+    public void EnteredInteractionRange() { }
 
     // Updates the cube's material color based on the dirty level
     private void UpdateCubeColor(float dirtyLevel) {
