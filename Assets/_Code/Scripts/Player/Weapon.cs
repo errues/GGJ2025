@@ -9,6 +9,7 @@ public class Weapon : Dirtable
     [Space]
     public GameObject MidDirtyGO;
     public GameObject FullDirtyGO;
+    private int threshold;
 
     protected override int MaxDirtLevel => Model.MaxDirtLevel;
 
@@ -28,17 +29,24 @@ public class Weapon : Dirtable
         Animator.SetTrigger("Hide");
     }
 
+    [ContextMenu("Clean")]
+    public void Clean()
+    {
+        _dirtLevel = MinDirtLevel;
+        UpdateView();
+    }
+
     protected override void UpdateView()
     {
         if (MidDirtyGO == null || FullDirtyGO == null) return;
 
-        float threshold = Model.MaxDirtLevel / 3;
+        threshold = Model.MaxDirtLevel / 3;
         if (_dirtLevel <= threshold)
         {
             MidDirtyGO.SetActive(false);
             FullDirtyGO.SetActive(false);
         }
-        else if (_dirtLevel > threshold && _dirtLevel < threshold * 2)
+        else if (_dirtLevel > threshold && _dirtLevel <= threshold * 2)
         {
             MidDirtyGO.SetActive(true);
             FullDirtyGO.SetActive(false);
