@@ -1,8 +1,14 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 public class Jammer : Cleanable
 {
     [SerializeField] private Animator _animator;
+
+    public GameObject MidDirtyGO;
+    public GameObject FullDirtyGO;
+    private int threshold;
+
 
     public override bool CanInteract()
     {
@@ -30,6 +36,31 @@ public class Jammer : Cleanable
             _animator.SetTrigger($"Hit{rnd}");
         }
     }
+
+
+    protected override void UpdateView()
+    {
+        if (MidDirtyGO == null || FullDirtyGO == null) return;
+
+        if (_dirtLevel == 0)
+        {
+            MidDirtyGO.SetActive(false);
+            FullDirtyGO.SetActive(false);
+        }
+        else if (_dirtLevel == 1)
+        {
+            MidDirtyGO.SetActive(true);
+            FullDirtyGO.SetActive(false);
+        }
+        else // max
+        {
+            MidDirtyGO.SetActive(true);
+            FullDirtyGO.SetActive(true);
+        }
+
+        base.UpdateView();
+    }
+
 
 
     private void Start()

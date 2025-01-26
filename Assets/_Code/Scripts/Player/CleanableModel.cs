@@ -6,6 +6,7 @@ public class CleanableModel : ScriptableObject, IEquatable<CleanableModel>
 {
     public string Name;
     public float SecondsBetweenDirtUpgrades = 3;
+    public int MaxDirtLevel = 2;
 
     public override bool Equals(object obj)
     {
