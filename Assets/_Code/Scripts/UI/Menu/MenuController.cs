@@ -10,8 +10,8 @@ public class MenuController : MonoBehaviour
     private PlayerInput playerInput;
     [SerializeField] private GameObject[] menuList;
 
-    [SerializeField] private VideoPlayer videoPlayer;
-    [SerializeField] private RawImage rawImage;
+    //[SerializeField] private VideoPlayer videoPlayer;
+    //[SerializeField] private RawImage rawImage;
 
     private int selected = -1;
     private Vector2 moveInput;
@@ -19,12 +19,12 @@ public class MenuController : MonoBehaviour
      private void Awake() {
         playerInput = GetComponent<PlayerInput>();
 
-        // Aseg�rate de que el video est� configurado
-        if (videoPlayer != null)
-        {
-            // Suscr�bete al evento loopPointReached
-            videoPlayer.loopPointReached += OnVideoEnd;
-        }
+        //// Aseg�rate de que el video est� configurado
+        //if (videoPlayer != null)
+        //{
+        //    // Suscr�bete al evento loopPointReached
+        //    videoPlayer.loopPointReached += OnVideoEnd;
+        //}
     }
 
     private void OnNavigate(InputValue value) {
@@ -50,55 +50,53 @@ public class MenuController : MonoBehaviour
         }
     }
 
-    void OnVideoEnd(VideoPlayer vp)
-    {
-        FadeOutRawImage(rawImage, 0.1f);
+    //void OnVideoEnd(VideoPlayer vp)
+    //{
+    //    FadeOutRawImage(rawImage, 0.1f);
        
-        Debug.Log("El video ha terminado.");
-    }
+    //    Debug.Log("El video ha terminado.");
+    //}
 
-    void OnDestroy()
-    {
-        // Desuscr�bete del evento para evitar errores
-        if (videoPlayer != null)
-        {
-            videoPlayer.loopPointReached -= OnVideoEnd;
-        }
-    }
+    //void OnDestroy()
+    //{
+    //    // Desuscr�bete del evento para evitar errores
+    //    if (videoPlayer != null)
+    //    {
+    //        videoPlayer.loopPointReached -= OnVideoEnd;
+    //    }
+    //}
 
-    public void FadeOutRawImage(RawImage rawImage, float duration)
-    {
-        StartCoroutine(FadeOutCoroutine(rawImage, duration));
-    }
+    //public void FadeOutRawImage(RawImage rawImage, float duration)
+    //{
+    //    StartCoroutine(FadeOutCoroutine(rawImage, duration));
+    //}
 
-    private IEnumerator FadeOutCoroutine(RawImage rawImage, float duration)
-    {
-        if (rawImage == null)
-        {
-            Debug.LogError("RawImage es nulo. Aseg�rate de asignar un RawImage.");
-            yield break;
-        }
+    //private IEnumerator FadeOutCoroutine(RawImage rawImage, float duration)
+    //{
+    //    if (rawImage == null)
+    //    {
+    //        Debug.LogError("RawImage es nulo. Aseg�rate de asignar un RawImage.");
+    //        yield break;
+    //    }
 
-        Color originalColor = rawImage.color;
-        float elapsedTime = 0f;
+    //    Color originalColor = rawImage.color;
+    //    float elapsedTime = 0f;
 
-        while (elapsedTime < duration)
-        {
-            elapsedTime += Time.deltaTime;
-            float alpha = Mathf.Lerp(originalColor.a, 0f, elapsedTime / duration);
-            rawImage.color = new Color(originalColor.r, originalColor.g, originalColor.b, alpha);
-            yield return null;
-        }
+    //    while (elapsedTime < duration)
+    //    {
+    //        elapsedTime += Time.deltaTime;
+    //        float alpha = Mathf.Lerp(originalColor.a, 0f, elapsedTime / duration);
+    //        rawImage.color = new Color(originalColor.r, originalColor.g, originalColor.b, alpha);
+    //        yield return null;
+    //    }
 
-        // Asegura que la opacidad sea completamente 0 al finalizar
-        rawImage.color = new Color(originalColor.r, originalColor.g, originalColor.b, 0f);
-        // Activa los objetos especificados
-        foreach (GameObject obj in menuList)
-        {
-            obj.SetActive(true);
-        }
+    //    // Asegura que la opacidad sea completamente 0 al finalizar
+    //    rawImage.color = new Color(originalColor.r, originalColor.g, originalColor.b, 0f);
+    //    // Activa los objetos especificados
+    //    foreach (GameObject obj in menuList)
+    //    {
+    //        obj.SetActive(true);
+    //    }
 
-    }
-
-
+    //}
 }

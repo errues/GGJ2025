@@ -1,12 +1,17 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Video;
+using System.Collections;
 
 public class ImageToWhiteAndLoadScene : MonoBehaviour
 {
     [SerializeField] private Image uiImage; // Referencia al componente Image
-    [SerializeField] private float transitionTime = 2.0f;   // Tiempo total de la transición
+    [SerializeField] private float transitionTime = 2.0f;   // Tiempo total de la transiciÃ³n
     [SerializeField] private string sceneToLoad = "NextScene"; // Nombre de la escena a cargar
+
+    [SerializeField] private RawImage rawImage;
+    [SerializeField] private VideoPlayer videoPlayer;
 
     private float timer = 0.0f;
 
@@ -19,7 +24,14 @@ public class ImageToWhiteAndLoadScene : MonoBehaviour
 
         if (uiImage == null)
         {
-            Debug.LogError("No se encontró un componente Image en el objeto o asignado manualmente.");
+            Debug.LogError("No se encontrÃ³ un componente Image en el objeto o asignado manualmente.");
+        }
+
+        // Asegï¿½rate de que el video estï¿½ configurado
+        if (videoPlayer != null)
+        {
+            // Suscrï¿½bete al evento loopPointReached
+            videoPlayer.loopPointReached += OnVideoEnd;
         }
     }
 
@@ -36,8 +48,52 @@ public class ImageToWhiteAndLoadScene : MonoBehaviour
             // Si se alcanza el tiempo total, cargar la escena
             if (progress >= 1.0f)
             {
-                SceneManager.LoadScene(sceneToLoad);
+                rawImage.gameObject.SetActive(true);
+                videoPlayer?.Play();
             }
         }
+    }
+
+    void OnVideoEnd(VideoPlayer vp)
+    {
+        SceneManager.LoadScene("SceneMenu");
+        Debug.Log("El video ha terminado.");
+    }
+
+    void OnDestroy()
+    {
+        // Desuscrï¿½bete del evento para evitar errores
+        if (videoPlayer != null)
+        {
+            videoPlayer.loopPointReached -= OnVideoEnd;
+        }
+    }
+
+    public void FadeOutRawImage(RawImage rawImage, float duration)
+    {
+        StartCoroutine(FadeOutCoroutine(rawImage, duration));
+    }
+
+    private IEnumerator FadeOutCoroutine(RawImage rawImage, float duration)
+    {
+        if (rawImage == null)
+        {
+            Debug.LogError("RawImage es nulo. Asegï¿½rate de asignar un RawImage.");
+            yield break;
+        }
+
+        Color originalColor = rawImage.color;
+        float elapsedTime = 0f;
+
+        while (elapsedTime < duration)
+        {
+            elapsedTime += Time.deltaTime;
+            float alpha = Mathf.Lerp(originalColor.a, 0f, elapsedTime / duration);
+            rawImage.color = new Color(originalColor.r, originalColor.g, originalColor.b, alpha);
+            yield return null;
+        }
+
+        // Asegura que la opacidad sea completamente 0 al finalizar
+        rawImage.color = new Color(originalColor.r, originalColor.g, originalColor.b, 0f);
     }
 }
