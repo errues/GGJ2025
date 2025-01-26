@@ -1,11 +1,10 @@
-﻿using System.Collections;
-using System.Threading.Tasks;
+﻿using MyBox;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
-public class CharacterWeaponHandler : MonoBehaviour
-{
+public class CharacterWeaponHandler : MonoBehaviour {
     private PlayerInput _playerInput;
     private int _currentWeaponIndex = 0;
     private int _totalWeaponsAmount => _weapons.Length;
@@ -13,10 +12,8 @@ public class CharacterWeaponHandler : MonoBehaviour
     [SerializeField] private Weapon[] _weapons;
     [SerializeField] private Weapon _specialWeapon;
 
-    public Weapon Current
-    {
-        get
-        {
+    public Weapon Current {
+        get {
             if (_usingSpecialWeapon)
                 return _specialWeapon;
             else
@@ -25,7 +22,7 @@ public class CharacterWeaponHandler : MonoBehaviour
     }
 
     public Animator CurrentWeaponAnimator => Current.Animator;
-    
+
     public UnityAction<Weapon> OnWeaponChanged;
 
     private bool _usingSpecialWeapon = false;
@@ -34,37 +31,32 @@ public class CharacterWeaponHandler : MonoBehaviour
     private Coroutine _changeWeaponCoroutine;
 
 
-    private void Awake()
-    {
+    private void Awake() {
         _playerInput = GetComponentInParent<PlayerInput>();
         _playerInput.actions["Attack"].performed += OnAttack;
         _playerInput.actions["Previous"].performed += OnPrevious;
         _playerInput.actions["Next"].performed += OnNext;
     }
 
-    private void OnAttack(InputAction.CallbackContext context)
-    {
+    private void OnAttack(InputAction.CallbackContext context) {
         if (_isChangingWeapon) return;
 
         Current.Attack();
     }
 
-    private void OnPrevious(InputAction.CallbackContext context)
-    {
+    private void OnPrevious(InputAction.CallbackContext context) {
         if (_usingSpecialWeapon) return;
 
         _changeWeaponCoroutine = StartCoroutine(ChangeWeaponIndex(_currentWeaponIndex - 1));
     }
 
-    private void OnNext(InputAction.CallbackContext context)
-    {
+    private void OnNext(InputAction.CallbackContext context) {
         if (_usingSpecialWeapon) return;
 
         _changeWeaponCoroutine = StartCoroutine(ChangeWeaponIndex(_currentWeaponIndex + 1));
     }
 
-    private IEnumerator ChangeWeaponIndex(int index)
-    {
+    private IEnumerator ChangeWeaponIndex(int index) {
         if (_isChangingWeapon) yield break;
 
         _isChangingWeapon = true;
@@ -79,22 +71,20 @@ public class CharacterWeaponHandler : MonoBehaviour
         _isChangingWeapon = false;
     }
 
-    private void SetSpecialWeapon()
-    {
+    [ButtonMethod]
+    private void SetSpecialWeapon() {
         if (_changeWeaponCoroutine != null)
             StopCoroutine(_changeWeaponCoroutine);
 
         StartCoroutine(ChangeToSpecialWeapon());
     }
 
-    private void FinishSpecialWeapon()
-    {
+    private void FinishSpecialWeapon() {
         _usingSpecialWeapon = false;
         _changeWeaponCoroutine = StartCoroutine(ChangeWeaponIndex(_currentWeaponIndex));
     }
 
-    private IEnumerator ChangeToSpecialWeapon()
-    {
+    private IEnumerator ChangeToSpecialWeapon() {
         _isChangingWeapon = true;
         Current.Hide();
         yield return new WaitForSeconds(1);

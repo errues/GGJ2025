@@ -1,5 +1,5 @@
-using UnityEngine;
 using System.Collections;
+using UnityEngine;
 
 public abstract class Dirt : MonoBehaviour, IInteractable {
     [SerializeField] protected Transform modelParent;
@@ -32,34 +32,32 @@ public abstract class Dirt : MonoBehaviour, IInteractable {
     protected abstract bool CanDisappear();
     public abstract void Interact();
 
-    protected virtual void Disappear()
-    {
-        active = false;
+    public virtual void Disappear() {
+        if (active) {
+            active = false;
 
-        // Inicia la animación de desaparición progresiva
-        StartCoroutine(AnimateDisappear(modelParent.GetChild(tier)));
+            // Inicia la animación de desaparición progresiva
+            StartCoroutine(AnimateDisappear(modelParent.GetChild(tier)));
 
-        // Desactiva la suciedad del generador
-        garbageGenerator.SetDirtInactive(this);
+            // Desactiva la suciedad del generador
+            garbageGenerator.SetDirtInactive(this);
 
-        if (cleanSound != null)
-        {
-            audioSource.PlayOneShot(cleanSound.GetRandomClip());
+            if (cleanSound != null) {
+                audioSource.PlayOneShot(cleanSound.GetRandomClip());
+            }
+
+            AddHygiene();
         }
-
-        AddHygiene();
     }
 
     // Corutina para animar la desaparición del objeto
-    private IEnumerator AnimateDisappear(Transform target)
-    {
+    private IEnumerator AnimateDisappear(Transform target) {
         Vector3 startScale = target.localScale; // Escala inicial
         Vector3 endScale = Vector3.zero; // Escala final (desaparece completamente)
         float duration = 0.5f; // Duración de la animación
         float elapsedTime = 0f;
 
-        while (elapsedTime < duration)
-        {
+        while (elapsedTime < duration) {
             elapsedTime += Time.deltaTime;
             float t = elapsedTime / duration; // Progreso normalizado [0, 1]
             target.localScale = Vector3.Lerp(startScale, endScale, t);

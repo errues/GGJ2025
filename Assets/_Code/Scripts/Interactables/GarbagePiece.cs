@@ -45,7 +45,7 @@ public class GarbagePiece : Dirt {
         modelOutline = modelParent.GetChild(tier).gameObject.GetComponent<OutlineRenderer>();
     }
 
-    protected override void Disappear() {
+    public override void Disappear() {
         if (modelOutline)
             modelOutline.enabled = false;
         modelOutline = null;
