@@ -49,7 +49,7 @@ public abstract class Dirt : MonoBehaviour, IInteractable {
         AddHygiene();
     }
 
-    public void Appear() {
+    public virtual void Appear() {
         active = true;
         tier = Random.Range(0, modelParent.childCount);
         modelParent.GetChild(tier).gameObject.SetActive(true);
