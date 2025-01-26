@@ -4,7 +4,7 @@ using UnityEngine;
 
 public abstract class Cleanable : Dirtable, IInteractable
 {
-    [SerializeField] private CleanableModel _model;
+    [SerializeField] protected CleanableModel _model;
     [SerializeField] protected WeaponModel _requiredWeapon;
 
     private Dictionary<int, Color> _colorBindings = new();
@@ -13,23 +13,14 @@ public abstract class Cleanable : Dirtable, IInteractable
 
     protected override int MaxDirtLevel => 2;
 
-    private void Awake() {
+    protected virtual void Awake()
+    {
         _dirtLevel = 2;
-
         _weaponHandler = FindFirstObjectByType<CharacterWeaponHandler>();
-        _colorBindings = new Dictionary<int, Color>();
-        _colorBindings.Add(0, Color.white);
-        _colorBindings.Add(1, Color.grey);
-        _colorBindings.Add(2, Color.black);
-
-
         UpdateView();
     }
 
     public abstract bool CanInteract();
-    //{
-        //return _weaponHandler.Current.Model == _requiredWeapon;
-    //}
 
     public virtual void Interact()
     {
@@ -37,14 +28,10 @@ public abstract class Cleanable : Dirtable, IInteractable
     }
 
 
-
     protected override void UpdateView()
     {
-        //_renderer.material.SetColor("_BaseColor", _colorBindings[_dirtLevel]);
-
-
-
-        if (_dirtUpdateCoroutine != null) {
+        if (_dirtUpdateCoroutine != null)
+        {
             StopCoroutine(_dirtUpdateCoroutine);
             _dirtUpdateCoroutine = null;
         }
@@ -52,12 +39,12 @@ public abstract class Cleanable : Dirtable, IInteractable
         _dirtUpdateCoroutine = StartCoroutine(DirtUpdateCoroutine());
     }
 
-    private IEnumerator DirtUpdateCoroutine() {
+    private IEnumerator DirtUpdateCoroutine()
+    {
         yield return new WaitForSeconds(_model.SecondsBetweenDirtUpgrades);
         IncreaseDirtLevel();
         yield return null;
     }
-
 
 
     public void CancelInteract() { }
