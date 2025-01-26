@@ -1,4 +1,6 @@
 using UnityEngine;
+using System.Collections;
+
 
 public class Puddle : Dirt {
     [System.Serializable]
@@ -25,19 +27,45 @@ public class Puddle : Dirt {
         return active;
     }
 
-    public override void Interact() {
-        if (CanDisappear()) {
+    public override void Interact()
+    {
+        if (CanDisappear())
+        {
             remainingHits--;
             weaponHandler.Current.IncreaseDirtLevel();
 
-            if (remainingHits == 0) {
+            if (remainingHits == 0)
+            {
                 Disappear();
-            } else {
-                modelParent.GetChild(tier).localScale = Vector3.Lerp(Vector3.zero, Vector3.one, 1f * remainingHits / puddleDataPerTier[tier].maxHits);
             }
-        } else {
+            else
+            {
+                float targetScale = 1f * remainingHits / puddleDataPerTier[tier].maxHits;
+                StartCoroutine(AnimateScale(modelParent.GetChild(tier), targetScale));
+            }
+        }
+        else
+        {
             animator.SetTrigger("WrongWeapon");
         }
+    }
+
+    private IEnumerator AnimateScale(Transform target, float targetScale)
+    {
+        Vector3 startScale = target.localScale; // Escala inicial
+        Vector3 endScale = Vector3.one * targetScale; // Escala final basada en el progreso
+        float duration = 0.5f; // Duración de la animación
+        float elapsedTime = 0f;
+
+        while (elapsedTime < duration)
+        {
+            elapsedTime += Time.deltaTime;
+            float t = elapsedTime / duration; // Progreso normalizado [0, 1]
+            target.localScale = Vector3.Lerp(startScale, endScale, t);
+            yield return null; // Esperar al siguiente frame
+        }
+
+        target.localScale = endScale; // Asegurar la escala final exacta
     }
 
     public override void Appear() {
