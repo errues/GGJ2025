@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8041400815406038185}
   - component: {fileID: 5926527106376609294}
   - component: {fileID: 6392564116367269311}
+  - component: {fileID: 3344800179286864253}
   m_Layer: 0
   m_Name: Jammer
   m_TagString: Untagged
@@ -72,6 +73,48 @@ CapsuleCollider:
   m_Height: 1.12
   m_Direction: 1
   m_Center: {x: 0, y: 0.56, z: 0}
+--- !u!114 &3344800179286864253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5686725419859716152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4056624e8a4a97640b1eae9f6449b556, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arms:
+  - {fileID: -3859639221210003851, guid: c5c3fc7c2e2dec14491c3730eb92e929, type: 3}
+  ears:
+  - {fileID: 4095463946907067839, guid: c5c3fc7c2e2dec14491c3730eb92e929, type: 3}
+  eyebrows:
+  - {fileID: 8776340961015295149, guid: c5c3fc7c2e2dec14491c3730eb92e929, type: 3}
+  eyeL:
+  - {fileID: 4972919716471792283, guid: c5c3fc7c2e2dec14491c3730eb92e929, type: 3}
+  eyeR:
+  - {fileID: 627991996394379453, guid: c5c3fc7c2e2dec14491c3730eb92e929, type: 3}
+  feet:
+  - {fileID: 4672128552430062666, guid: c5c3fc7c2e2dec14491c3730eb92e929, type: 3}
+  foto:
+  - {fileID: -2283919045640001160, guid: c5c3fc7c2e2dec14491c3730eb92e929, type: 3}
+  head:
+  - {fileID: -4017189620862090153, guid: c5c3fc7c2e2dec14491c3730eb92e929, type: 3}
+  head1:
+  - {fileID: 989577820716213839, guid: c5c3fc7c2e2dec14491c3730eb92e929, type: 3}
+  legs:
+  - {fileID: -7828081305636789627, guid: c5c3fc7c2e2dec14491c3730eb92e929, type: 3}
+  mouth:
+  - {fileID: 1245628284459718977, guid: c5c3fc7c2e2dec14491c3730eb92e929, type: 3}
+  nose:
+  - {fileID: 6080400523184958234, guid: c5c3fc7c2e2dec14491c3730eb92e929, type: 3}
+  pants:
+  - {fileID: -2691784582546423085, guid: c5c3fc7c2e2dec14491c3730eb92e929, type: 3}
+  shirt3:
+  - {fileID: -5319730322545180269, guid: c5c3fc7c2e2dec14491c3730eb92e929, type: 3}
+  faceTexture: {fileID: 0}
+  baseModel: {fileID: 9188985752283070519}
 --- !u!1001 &8305970367654559078
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -151,15 +194,144 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7538123113446704663, guid: c5c3fc7c2e2dec14491c3730eb92e929, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3046114692911020171}
+    - targetCorrespondingSourceObject: {fileID: -8019173634872215712, guid: c5c3fc7c2e2dec14491c3730eb92e929, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4456250870410007049}
   m_SourcePrefab: {fileID: 100100000, guid: c5c3fc7c2e2dec14491c3730eb92e929, type: 3}
+--- !u!1 &2006484487367523185 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7538123113446704663, guid: c5c3fc7c2e2dec14491c3730eb92e929, type: 3}
+  m_PrefabInstance: {fileID: 8305970367654559078}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &3046114692911020171
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2006484487367523185}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.25
+  m_Height: 0.2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!95 &2462951826899124471 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: c5c3fc7c2e2dec14491c3730eb92e929, type: 3}
   m_PrefabInstance: {fileID: 8305970367654559078}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &7201977203443829254 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -8019173634872215712, guid: c5c3fc7c2e2dec14491c3730eb92e929, type: 3}
+  m_PrefabInstance: {fileID: 8305970367654559078}
+  m_PrefabAsset: {fileID: 0}
+--- !u!183 &4456250870410007049
+Cloth:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7201977203443829254}
+  m_Enabled: 1
+  m_StretchingStiffness: 1
+  m_BendingStiffness: 0
+  m_UseTethers: 1
+  m_UseGravity: 1
+  m_Damping: 0.7
+  m_ExternalAcceleration: {x: 0, y: 0, z: 0}
+  m_RandomAcceleration: {x: 0, y: 0, z: 0}
+  m_WorldVelocityScale: 0.5
+  m_WorldAccelerationScale: 1
+  m_Friction: 0.5
+  m_CollisionMassScale: 0
+  m_UseContinuousCollision: 1
+  m_UseVirtualParticles: 1
+  m_SolverFrequency: 120
+  m_SleepThreshold: 0.1
+  m_Coefficients:
+  - maxDistance: 0.4
+    collisionSphereDistance: 3.4028235e+38
+  - maxDistance: 0.3
+    collisionSphereDistance: 3.4028235e+38
+  - maxDistance: 0.4
+    collisionSphereDistance: 3.4028235e+38
+  - maxDistance: 0.3
+    collisionSphereDistance: 3.4028235e+38
+  - maxDistance: 0.4
+    collisionSphereDistance: 3.4028235e+38
+  - maxDistance: 0.2
+    collisionSphereDistance: 3.4028235e+38
+  - maxDistance: 0.3
+    collisionSphereDistance: 3.4028235e+38
+  - maxDistance: 0.4
+    collisionSphereDistance: 3.4028235e+38
+  - maxDistance: 0.2
+    collisionSphereDistance: 3.4028235e+38
+  - maxDistance: 0.1
+    collisionSphereDistance: 3.4028235e+38
+  - maxDistance: 0.3
+    collisionSphereDistance: 3.4028235e+38
+  - maxDistance: 0.4
+    collisionSphereDistance: 3.4028235e+38
+  - maxDistance: 0.3
+    collisionSphereDistance: 3.4028235e+38
+  - maxDistance: 0.2
+    collisionSphereDistance: 3.4028235e+38
+  - maxDistance: 0.1
+    collisionSphereDistance: 3.4028235e+38
+  - maxDistance: 0
+    collisionSphereDistance: 3.4028235e+38
+  - maxDistance: 0
+    collisionSphereDistance: 3.4028235e+38
+  - maxDistance: 0.2
+    collisionSphereDistance: 3.4028235e+38
+  - maxDistance: 0.2
+    collisionSphereDistance: 3.4028235e+38
+  - maxDistance: 0.1
+    collisionSphereDistance: 3.4028235e+38
+  - maxDistance: 0
+    collisionSphereDistance: 3.4028235e+38
+  - maxDistance: 0.1
+    collisionSphereDistance: 3.4028235e+38
+  - maxDistance: 0.1
+    collisionSphereDistance: 3.4028235e+38
+  - maxDistance: 0
+    collisionSphereDistance: 3.4028235e+38
+  - maxDistance: 0
+    collisionSphereDistance: 3.4028235e+38
+  m_CapsuleColliders:
+  - {fileID: 3046114692911020171}
+  m_SphereColliders: []
+  m_SelfCollisionDistance: 0
+  m_SelfCollisionStiffness: 0.2
+  m_SelfAndInterCollisionIndices: 
+  m_VirtualParticleWeights:
+  - {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+  - {x: 0.6666667, y: 0.16666667, z: 0.16666667}
+  - {x: 0.5, y: 0.5, z: 0}
+  m_VirtualParticleIndices: 
 --- !u!4 &8416670764950166157 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c5c3fc7c2e2dec14491c3730eb92e929, type: 3}
+  m_PrefabInstance: {fileID: 8305970367654559078}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &9188985752283070519 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c5c3fc7c2e2dec14491c3730eb92e929, type: 3}
   m_PrefabInstance: {fileID: 8305970367654559078}
   m_PrefabAsset: {fileID: 0}

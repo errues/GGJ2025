@@ -99,5 +99,7 @@ MonoBehaviour:
   - {fileID: 2800000, guid: f0b926c9e29d08940b9d42d4aea0610d, type: 3}
   - {fileID: 2800000, guid: fdae79c6e96bacc4c8a9ac36971be7f6, type: 3}
   - {fileID: 2800000, guid: 9e86c51cd05d07845b09cf19b9cffdf0, type: 3}
+  - {fileID: 2800000, guid: 2b958ed8ed211634ba8a437acc9ce8c1, type: 3}
+  - {fileID: 2800000, guid: d7c0ba8eaf1283543ab6e39d5cc47a25, type: 3}
   baseModel: {fileID: 919132149155446097, guid: c5c3fc7c2e2dec14491c3730eb92e929, type: 3}
   CharactersPool: []
