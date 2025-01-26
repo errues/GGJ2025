@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efdb8f97bb8896e4d819174a1f5e85fe, type: 3}
   m_Name: VfxLibrary
   m_EditorClassIdentifier: 
-  VfxCollection: []
+  VfxCollection:
+  - Id: Cleaned1
+    Vfx: {fileID: 100002, guid: a81ef04ac72436744a08ef117fa691b4, type: 3}
