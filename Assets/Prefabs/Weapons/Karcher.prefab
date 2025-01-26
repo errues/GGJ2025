@@ -72,19 +72,45 @@ PrefabInstance:
       propertyPath: m_Name
       value: Karcher
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6239744720216668124, guid: f7e1bec179c57e944b19b272cfc9b373, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 4349114847569313560, guid: f7e1bec179c57e944b19b272cfc9b373, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7447079750274926740}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7063418937792530540, guid: f7e1bec179c57e944b19b272cfc9b373, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2011972570991365266}
   m_SourcePrefab: {fileID: 100100000, guid: f7e1bec179c57e944b19b272cfc9b373, type: 3}
 --- !u!4 &3639520923709137562 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4349114847569313560, guid: f7e1bec179c57e944b19b272cfc9b373, type: 3}
   m_PrefabInstance: {fileID: 1069890879196896642}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &7845070506940306926 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7063418937792530540, guid: f7e1bec179c57e944b19b272cfc9b373, type: 3}
+  m_PrefabInstance: {fileID: 1069890879196896642}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2011972570991365266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7845070506940306926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d2c6fbfc37f22e43ac9613bbf2711bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Model: {fileID: 11400000, guid: 2fbb614d07430fc4684a6816391fdad8, type: 2}
+  Animator: {fileID: 0}
+  MidDirtyGO: {fileID: 0}
+  FullDirtyGO: {fileID: 0}
+  detector: {fileID: 0}
 --- !u!1001 &6864285922717144106
 PrefabInstance:
   m_ObjectHideFlags: 0

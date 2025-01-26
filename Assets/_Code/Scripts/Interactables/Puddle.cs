@@ -1,5 +1,5 @@
-using UnityEngine;
 using System.Collections;
+using UnityEngine;
 
 
 public class Puddle : Dirt {
@@ -28,38 +28,29 @@ public class Puddle : Dirt {
         return active;
     }
 
-    public override void Interact()
-    {
-        if (CanDisappear())
-        {
+    public override void Interact() {
+        if (CanDisappear()) {
             remainingHits--;
             weaponHandler.Current.IncreaseDirtLevel();
             PlayParticles();
-            if (remainingHits == 0)
-            {
+            if (remainingHits == 0) {
                 Disappear();
-            }
-            else
-            {
+            } else {
                 float targetScale = 1f * remainingHits / puddleDataPerTier[tier].maxHits;
                 StartCoroutine(AnimateScale(modelParent.GetChild(tier), targetScale));
             }
-        }
-        else
-        {
+        } else {
             animator.SetTrigger("WrongWeapon");
         }
     }
 
-    private IEnumerator AnimateScale(Transform target, float targetScale)
-    {
+    private IEnumerator AnimateScale(Transform target, float targetScale) {
         Vector3 startScale = target.localScale; // Escala inicial
         Vector3 endScale = Vector3.one * targetScale; // Escala final basada en el progreso
         float duration = 0.5f; // Duración de la animación
         float elapsedTime = 0f;
 
-        while (elapsedTime < duration)
-        {
+        while (elapsedTime < duration) {
             elapsedTime += Time.deltaTime;
             float t = elapsedTime / duration; // Progreso normalizado [0, 1]
             target.localScale = Vector3.Lerp(startScale, endScale, t);
@@ -94,14 +85,10 @@ public class Puddle : Dirt {
         return weaponHandler.Current.Model == requiredWeapon && !weaponHandler.Current.IsFullDirty;
     }
 
-    public void PlayParticles()
-    {
-        if (particleFX != null)
-        {
+    public void PlayParticles() {
+        if (particleFX != null) {
             particleFX.Play(); // Reproduce el sistema de partículas
-        }
-        else
-        {
+        } else {
             Debug.LogWarning("No ParticleSystem assigned!");
         }
     }
