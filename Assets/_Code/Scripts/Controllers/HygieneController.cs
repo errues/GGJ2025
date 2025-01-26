@@ -39,6 +39,7 @@ public class HygieneController : MonoBehaviour {
         UpdateVisuals();
     }
 
+    private bool gameOver;
     private void ReduceHygiene(object value) {
 
         currentHygiene = Mathf.Clamp(currentHygiene - (int)value, 0, maxHygiene);
@@ -46,6 +47,8 @@ public class HygieneController : MonoBehaviour {
 
         if (currentHygiene == 0) {
             MessageBus.Instance.Notify("GameOver");
+
+
         }
     }
 
@@ -58,10 +61,14 @@ public class HygieneController : MonoBehaviour {
         dirtyWeightTarget = 1 - Mathf.Lerp(0, 1, (normalizedHygiene - .166f) / .33f);
     }
 
-
     private void GameOver(object value)
     {
-        SceneManager.LoadScene("LooseScene");
+        if(!gameOver)
+        {
+            gameOver = true;
+            SceneManager.LoadScene("LooseScene");
+        }
+        
     }
 
 }
