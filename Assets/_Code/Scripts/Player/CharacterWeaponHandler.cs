@@ -21,9 +21,20 @@ public class CharacterWeaponHandler : MonoBehaviour {
         }
     }
 
+    public int CurrentIndex
+    {
+        get
+        {
+            if (_usingSpecialWeapon)
+                return _weapons.Length;
+            else
+                return _currentWeaponIndex;
+        }
+    }
+
     public Animator CurrentWeaponAnimator => Current.Animator;
 
-    public UnityAction<Weapon> OnWeaponChanged;
+    public UnityAction<int> OnWeaponChanged { get; set; }
 
     private bool _usingSpecialWeapon = false;
     private bool _isChangingWeapon;
@@ -68,7 +79,7 @@ public class CharacterWeaponHandler : MonoBehaviour {
         _currentWeaponIndex = (index + _totalWeaponsAmount) % _totalWeaponsAmount;
 
         Current.Show();
-        OnWeaponChanged(Current);
+        OnWeaponChanged(CurrentIndex);
         _isChangingWeapon = false;
     }
 
@@ -93,7 +104,7 @@ public class CharacterWeaponHandler : MonoBehaviour {
         _usingSpecialWeapon = true;
 
         Current.Show();
-        OnWeaponChanged(Current);
+        OnWeaponChanged(CurrentIndex);
         _isChangingWeapon = false;
     }
 }

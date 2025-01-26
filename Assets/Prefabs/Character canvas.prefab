@@ -789,7 +789,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6809474380769487721
 RectTransform:
   m_ObjectHideFlags: 0
@@ -860,7 +860,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _characterWeaponHandler: {fileID: 0}
-  _selectedWeaponImage: {fileID: 8766638085555341900}
+  _selectedWeaponAnimator: {fileID: 0}
 --- !u!1 &8828687958901173040
 GameObject:
   m_ObjectHideFlags: 0

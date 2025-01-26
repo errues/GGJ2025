@@ -963,6 +963,7 @@ GameObject:
   - component: {fileID: 729440446504739553}
   - component: {fileID: 7884170965546689237}
   - component: {fileID: 7225076624594810411}
+  - component: {fileID: 7105001403438734959}
   m_Layer: 5
   m_Name: Weapon select
   m_TagString: Untagged
@@ -1055,6 +1056,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7105001403438734959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7670792216417582559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0e13fe619a6f7642b727b66d06bd5bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _characterWeaponHandler: {fileID: 0}
+  _selectedWeaponAnimator: {fileID: 7225076624594810411}
 --- !u!1 &8541207612116153852
 GameObject:
   m_ObjectHideFlags: 0

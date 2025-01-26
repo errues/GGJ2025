@@ -3,13 +3,19 @@ using UnityEngine.UI;
 
 public class WeaponSelectionUI : MonoBehaviour
 {
-    [SerializeField] private CharacterWeaponHandler _characterWeaponHandler;
-    [SerializeField] private Image _selectedWeaponImage;
+    private CharacterWeaponHandler _characterWeaponHandler;
+    [SerializeField] private Animator _selectedWeaponAnimator;
+    //[SerializeField] private Image _selectedWeaponImage;
 
     private void OnEnable()
     {
+        if (_characterWeaponHandler == null)
+        {
+            _characterWeaponHandler = FindFirstObjectByType<CharacterWeaponHandler>();
+        }
+
         _characterWeaponHandler.OnWeaponChanged += SelectCurrentWeapon;
-        SelectCurrentWeapon(_characterWeaponHandler.Current);
+        SelectCurrentWeapon(_characterWeaponHandler.CurrentIndex);
     }
 
     private void OnDisable()
@@ -18,9 +24,10 @@ public class WeaponSelectionUI : MonoBehaviour
     }
 
 
-    private void SelectCurrentWeapon(Weapon currentWeapon)
+    private void SelectCurrentWeapon(int currentWeapon)
     {
-        _selectedWeaponImage.sprite = currentWeapon.Model.PreviewSprite;
+        //_selectedWeaponImage.sprite = currentWeapon.Model.PreviewSprite;
+        _selectedWeaponAnimator.SetInteger("weapon_selected", currentWeapon);
     }
 
 }

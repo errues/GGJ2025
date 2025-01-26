@@ -68,6 +68,7 @@ public class Weapon : Dirtable {
             ParticleSystem particleFX = GetComponentInChildren<ParticleSystem>();
             if (particleFX != null)
             {
+                particleFX.Stop(true, ParticleSystemStopBehavior.StopEmitting);
                 particleFX.Play();
             }
         }
