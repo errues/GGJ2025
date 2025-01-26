@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Rendering;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class HygieneController : MonoBehaviour {
@@ -24,6 +25,7 @@ public class HygieneController : MonoBehaviour {
     void Start() {
         MessageBus.Instance.Subscribe("AddHygiene", AddHygiene);
         MessageBus.Instance.Subscribe("ReduceHygiene", ReduceHygiene);
+        MessageBus.Instance.Subscribe("GameOver", GameOver);
     }
 
     private void Update() {
@@ -38,6 +40,7 @@ public class HygieneController : MonoBehaviour {
     }
 
     private void ReduceHygiene(object value) {
+
         currentHygiene = Mathf.Clamp(currentHygiene - (int)value, 0, maxHygiene);
         UpdateVisuals();
 
@@ -54,4 +57,11 @@ public class HygieneController : MonoBehaviour {
         midWeightTarget = .5f - (Mathf.Abs(.5f - normalizedHygiene) - 0.166f) / .33f;
         dirtyWeightTarget = 1 - Mathf.Lerp(0, 1, (normalizedHygiene - .166f) / .33f);
     }
+
+
+    private void GameOver(object value)
+    {
+        SceneManager.LoadScene("LooseScene");
+    }
+
 }
