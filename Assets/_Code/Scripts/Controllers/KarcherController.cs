@@ -1,15 +1,24 @@
 using MyBox;
+using System.Collections;
 using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.Playables;
 
 public class KarcherController : MonoBehaviour
 {
+    [SerializeField] private MinMaxFloat karcherFirstAppear = new MinMaxFloat(40, 60);
+    [SerializeField] private MinMaxFloat karcherCooldownAppear = new MinMaxFloat(40, 60);
+    [SerializeField] private float karcherDuration = 10f;
+
+    [Separator]
+
     [SerializeField] private PlayableDirector _appear;
     [SerializeField] private PlayableDirector _appearIdle;
 
     [SerializeField] private PlayableDirector _usingLoop;
     [SerializeField] private PlayableDirector _stopUsing;
+
+    private bool _canTakeKarcher;
 
     private void Awake()
     {
@@ -18,6 +27,21 @@ public class KarcherController : MonoBehaviour
 
         _usingLoop.gameObject.SetActive(false);
         _stopUsing.gameObject.SetActive(false);
+    }
+
+    private IEnumerator Start()
+    {
+        yield return new WaitForSeconds(karcherFirstAppear.RandomInRange());
+
+        while (true) 
+        {
+            KarcherAppear();
+
+            yield return new WaitUntil(() => _usingLoop.gameObject.activeSelf);
+
+            yield return new WaitForSeconds(karcherDuration);
+            yield return new WaitForSeconds(karcherCooldownAppear.RandomInRange());
+        }
     }
 
     [ButtonMethod]
@@ -36,10 +60,11 @@ public class KarcherController : MonoBehaviour
 
         _appearIdle.gameObject.SetActive(true);
         _appearIdle.Play();
+
+        _canTakeKarcher = true;
     }
 
-    [ButtonMethod]
-    public void StartUsingKarcher()
+    public async void StartUsingKarcher(CharacterWeaponHandler characterWeapon)
     {
         _appear.gameObject.SetActive(false);
 
@@ -48,6 +73,11 @@ public class KarcherController : MonoBehaviour
 
         _usingLoop.gameObject.SetActive(true);
         _usingLoop.Play();
+
+        await Task.Delay((int)(karcherDuration * 1000));
+        FinishUsingKarcher();
+
+        characterWeapon.FinishSpecialWeapon();
     }
 
     [ButtonMethod]
@@ -68,5 +98,17 @@ public class KarcherController : MonoBehaviour
         }
 
         _stopUsing.gameObject.SetActive(false);
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (!_canTakeKarcher) return;
+        if (other.CompareTag("Player"))
+        {
+            _canTakeKarcher = false;
+            CharacterWeaponHandler characterWeapon = other.gameObject.GetComponentInChildren<CharacterWeaponHandler>();
+            characterWeapon.SetSpecialWeapon();
+            StartUsingKarcher(characterWeapon);
+        }
     }
 }
