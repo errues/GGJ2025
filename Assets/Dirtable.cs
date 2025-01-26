@@ -9,10 +9,23 @@ public abstract class Dirtable : MonoBehaviour
 
     public bool IsFullDirty => _dirtLevel >= MaxDirtLevel;
 
+    public int HygieneAddedByReducing = 1;
+    public int HygieneAddedByCleaning = 2;
+    public int HygieneReducedByDirt = 1;
+
     protected abstract void UpdateView();
     public void ReduceDirtLevel()
     {
         _dirtLevel = Math.Clamp(_dirtLevel - 1, MinDirtLevel, MaxDirtLevel);
+        if (_dirtLevel == MinDirtLevel)
+        {
+            MessageBus.Instance.Notify("AddHygiene", HygieneAddedByCleaning);
+        }
+        else
+        {
+            MessageBus.Instance.Notify("AddHygiene", HygieneAddedByReducing);
+        }
+
         UpdateView();
     }
 
@@ -21,6 +34,7 @@ public abstract class Dirtable : MonoBehaviour
         if (_dirtLevel < MaxDirtLevel)
         {
             _dirtLevel = Math.Clamp(_dirtLevel + 1, MinDirtLevel, MaxDirtLevel);
+            MessageBus.Instance.Notify("ReduceHygiene", HygieneReducedByDirt);
             UpdateView();
         }
     }
