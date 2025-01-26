@@ -2,8 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Cleanable : Dirtable, IInteractable
-{
+public abstract class Cleanable : Dirtable, IInteractable {
     [SerializeField] protected CleanableModel _model;
     [SerializeField] protected WeaponModel _requiredWeapon;
 
@@ -13,8 +12,7 @@ public abstract class Cleanable : Dirtable, IInteractable
 
     protected override int MaxDirtLevel => 2;
 
-    protected virtual void Awake()
-    {
+    protected virtual void Awake() {
         _dirtLevel = 0;
         _weaponHandler = FindFirstObjectByType<CharacterWeaponHandler>();
         UpdateView();
@@ -22,16 +20,13 @@ public abstract class Cleanable : Dirtable, IInteractable
 
     public abstract bool CanInteract();
 
-    public virtual void Interact()
-    {
+    public virtual void Interact() {
         ReduceDirtLevel();
     }
 
 
-    protected override void UpdateView()
-    {
-        if (_dirtUpdateCoroutine != null)
-        {
+    protected override void UpdateView() {
+        if (_dirtUpdateCoroutine != null) {
             StopCoroutine(_dirtUpdateCoroutine);
             _dirtUpdateCoroutine = null;
         }
@@ -39,9 +34,8 @@ public abstract class Cleanable : Dirtable, IInteractable
         _dirtUpdateCoroutine = StartCoroutine(DirtUpdateCoroutine());
     }
 
-    private IEnumerator DirtUpdateCoroutine()
-    {
-        yield return new WaitForSeconds(_model.SecondsBetweenDirtUpgrades);
+    private IEnumerator DirtUpdateCoroutine() {
+        yield return new WaitForSeconds(Random.Range(_model.RandomDirtTimeLimits.x, _model.RandomDirtTimeLimits.y));
         IncreaseDirtLevel();
         yield return null;
     }
