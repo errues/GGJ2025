@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System.Collections;
+using System.Threading.Tasks;
 using UnityEngine;
 
 public class Weapon : Dirtable {
@@ -21,10 +22,12 @@ public class Weapon : Dirtable {
         if (_isAttacking) return;
 
         _isAttacking = true;
+        ShowFX();
         int rnd = Random.Range(1, 6);
         Animator.SetInteger("Attack_Random", rnd);
         await Task.Delay(50);
         Animator.SetInteger("Attack_Random", 0);
+        ShowFX();
         _isAttacking = false;
     }
 
@@ -56,5 +59,18 @@ public class Weapon : Dirtable {
 
     internal void Show() {
         Animator.gameObject.SetActive(true);
+    }
+
+    private void ShowFX()
+    {
+        if (Model.name.Equals("Mop"))
+        {
+            ParticleSystem particleFX = GetComponentInChildren<ParticleSystem>();
+            if (particleFX != null)
+            {
+                particleFX.Stop(true, ParticleSystemStopBehavior.StopEmitting);
+                particleFX.Play();
+            }
+        }
     }
 }
