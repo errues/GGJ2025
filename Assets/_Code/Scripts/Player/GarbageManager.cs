@@ -5,6 +5,10 @@ public class GarbageManager : MonoBehaviour {
     [SerializeField] private int garbageCapacity;
     [SerializeField] private Image garbageBar;
 
+    [SerializeField] private GameObject garbageModelTier1;
+    [SerializeField] private GameObject garbageModelTier2;
+    [SerializeField] private GameObject garbageModelTier3;
+
     private int currentGarbageAmount;
 
     public static GarbageManager Instance { get; private set; }
@@ -17,20 +21,24 @@ public class GarbageManager : MonoBehaviour {
     public void PickUpGarbage() {
         if (!FreePickups) {
             currentGarbageAmount++;
-            UpdateBar();
+            UpdateVisuals();
         }
     }
 
     public void EmptyGarbage() {
         currentGarbageAmount = 0;
-        UpdateBar();
+        UpdateVisuals();
     }
 
     public bool CanSpaceGarbage() {
         return currentGarbageAmount < garbageCapacity;
     }
 
-    private void UpdateBar() {
+    private void UpdateVisuals() {
         garbageBar.fillAmount = 1f * currentGarbageAmount / garbageCapacity;
+
+        garbageModelTier1.SetActive(currentGarbageAmount > 0);
+        garbageModelTier2.SetActive(currentGarbageAmount >= garbageCapacity / 2);
+        garbageModelTier3.SetActive(currentGarbageAmount == garbageCapacity);
     }
 }

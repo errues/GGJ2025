@@ -15,7 +15,7 @@ public abstract class Cleanable : Dirtable, IInteractable
 
     protected virtual void Awake()
     {
-        _dirtLevel = 2;
+        _dirtLevel = 0;
         _weaponHandler = FindFirstObjectByType<CharacterWeaponHandler>();
         UpdateView();
     }
