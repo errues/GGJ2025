@@ -8,7 +8,7 @@ public abstract class FixInteractable : MonoBehaviour, IInteractable {
 
     protected abstract void InteractionAction();
 
-    private void Awake() {
+    protected virtual void Awake() {
         weaponHandler = FindFirstObjectByType<CharacterWeaponHandler>();
         outlineRenderer = GetComponentInChildren<OutlineRenderer>();
     }
