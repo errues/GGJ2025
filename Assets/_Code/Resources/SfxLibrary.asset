@@ -12,4 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 903a6192eef87c946a17776a770a2d0e, type: 3}
   m_Name: SfxLibrary
   m_EditorClassIdentifier: 
-  SfxCollection: []
+  SfxCollection:
+  - Id: Sponge1
+    Sfx: {fileID: 8300000, guid: 5ef3e8d9af538c54b87e486b1319f63e, type: 3}
+  - Id: Mop1
+    Sfx: {fileID: 8300000, guid: e0a838dd306f7ce4aa22244813c26119, type: 3}
