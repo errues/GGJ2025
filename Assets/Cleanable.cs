@@ -1,9 +1,8 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Cleanable : MonoBehaviour, IInteractable
+public class Cleanable : Dirtable, IInteractable
 {
     [SerializeField] private CleanableModel _model;
     [SerializeField] private WeaponModel _requiredWeapon;
@@ -15,13 +14,12 @@ public class Cleanable : MonoBehaviour, IInteractable
     private CharacterWeaponHandler _weaponHandler;
     private Coroutine _dirtUpdateCoroutine;
 
-    private int _dirtLevel = 2; // 0 = clean, 2 = dirty
-    private const int MIN_DIRT_LEVEL = 0;
-    private const int MAX_DIRT_LEVEL = 2;
-
+    protected override int MaxDirtLevel => 2;
 
     private void Awake()
     {
+        _dirtLevel = 2;
+
         _weaponHandler = FindFirstObjectByType<CharacterWeaponHandler>();
         _colorBindings = new Dictionary<int, Color>();
         _colorBindings.Add(0, Color.white);        
@@ -40,16 +38,11 @@ public class Cleanable : MonoBehaviour, IInteractable
     public void Interact()
     {
         ReduceDirtLevel();
-
     }
 
-    private void ReduceDirtLevel()
-    {
-        _dirtLevel = Math.Clamp(_dirtLevel - 1, MIN_DIRT_LEVEL, MAX_DIRT_LEVEL);
-        UpdateView();
-    }
 
-    private void UpdateView()
+
+    protected override void UpdateView()
     {
         _renderer.material.SetColor("_BaseColor", _colorBindings[_dirtLevel]);
 
@@ -69,14 +62,7 @@ public class Cleanable : MonoBehaviour, IInteractable
         yield return null;
     }
 
-    private void IncreaseDirtLevel()
-    {
-        if (_dirtLevel < MAX_DIRT_LEVEL)
-        {
-            _dirtLevel = Math.Clamp(_dirtLevel + 1, MIN_DIRT_LEVEL, MAX_DIRT_LEVEL);
-            UpdateView();
-        }
-    }
+
 
     public void CancelInteract()
     {
