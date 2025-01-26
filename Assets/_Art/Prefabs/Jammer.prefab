@@ -295,10 +295,23 @@ MonoBehaviour:
   - {fileID: 6080400523184958234, guid: c5c3fc7c2e2dec14491c3730eb92e929, type: 3}
   pants:
   - {fileID: -2691784582546423085, guid: c5c3fc7c2e2dec14491c3730eb92e929, type: 3}
+  - {fileID: 17406508696710997, guid: 9f37a968b26410b4397c456aacc99e7e, type: 3}
+  - {fileID: -6974738828990989011, guid: 9f37a968b26410b4397c456aacc99e7e, type: 3}
   shirt3:
   - {fileID: -5319730322545180269, guid: c5c3fc7c2e2dec14491c3730eb92e929, type: 3}
-  FaceTexture: {fileID: 0}
-  baseModel: {fileID: 9188985752283070519}
+  - {fileID: -1686575360268807383, guid: 9f37a968b26410b4397c456aacc99e7e, type: 3}
+  - {fileID: 648628693125424821, guid: 9f37a968b26410b4397c456aacc99e7e, type: 3}
+  colors:
+  - {r: 0.8301887, g: 0.1580433, b: 0.14489143, a: 1}
+  - {r: 0.45189577, g: 0.8018868, b: 0.2988163, a: 1}
+  - {r: 0.18614274, g: 0.56013143, b: 0.8396226, a: 1}
+  - {r: 0.7856396, g: 0.8018868, b: 0.26099145, a: 1}
+  - {r: 0.84670264, g: 0.36445355, b: 0.8490566, a: 1}
+  - {r: 0.26415092, g: 0.25792095, b: 0.25792095, a: 1}
+  - {r: 0.7924528, g: 0.7924528, b: 0.7924528, a: 1}
+  - {r: 0.45849538, g: 0.18178178, b: 0.8962264, a: 1}
+  FaceTexture: {fileID: 2800000, guid: 34c4fc6d56a529e45ae50225842f6a60, type: 3}
+  baseModel: {fileID: 0}
 --- !u!114 &2603044543453581106
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,8 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class JammerGenerator : MonoBehaviour
-{
+public class JammerGenerator : MonoBehaviour {
     [Header("Body Parts")]
     [SerializeField] private List<Mesh> arms;
     [SerializeField] private List<Mesh> ears;
@@ -19,20 +18,24 @@ public class JammerGenerator : MonoBehaviour
     [SerializeField] private List<Mesh> pants;
     [SerializeField] private List<Mesh> shirt3;
 
+    [SerializeField] private List<Color> colors;
+
     [Header("Face Textures")]
     public Texture FaceTexture;
 
     [Header("Base Model")]
     [SerializeField] private GameObject baseModel;
 
-    //private void Start()
-    //{
-    //    // Assign random meshes to each body part using the child renderers
-    //    Generate();
-    //}
+    private void Start() {
+        // Assign random meshes to each body part using the child renderers
+        //Generate();
 
-    public void Generate()
-    {
+        Transform childTransform = baseModel.transform.Find("character:Geometry/character:basechar/character:shirt3");
+        childTransform.GetComponent<SkinnedMeshRenderer>().material.color = colors[Random.Range(0, colors.Count)];
+        // SetRandomMesh(baseModel, "character:foto", foto, true, FaceTexture);
+    }
+
+    public void Generate() {
         SetRandomMesh(baseModel, "character:arms", arms);
         SetRandomMesh(baseModel, "character:ears", ears);
         SetRandomMesh(baseModel, "character:eyebrows", eyebrows);
@@ -49,8 +52,7 @@ public class JammerGenerator : MonoBehaviour
         SetRandomMesh(baseModel, "character:shirt3", shirt3);
     }
 
-    private void SetRandomMesh(GameObject character, string childName, List<Mesh> meshList, bool isHead = false, Texture faceTexture = null)
-    {
+    private void SetRandomMesh(GameObject character, string childName, List<Mesh> meshList, bool isHead = false, Texture faceTexture = null) {
         if (meshList.Count == 0) return;
 
         // Find the child renderer by name
@@ -65,8 +67,7 @@ public class JammerGenerator : MonoBehaviour
         skinnedMeshRenderer.sharedMesh = randomMesh;
 
         // If the body part is the head, assign the specified texture
-        if (isHead && faceTexture != null)
-        {
+        if (isHead && faceTexture != null) {
             Material originalMaterial = skinnedMeshRenderer.material;
             Material newMaterial = new Material(originalMaterial);
             newMaterial.mainTexture = faceTexture;
