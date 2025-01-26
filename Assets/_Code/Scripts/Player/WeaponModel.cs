@@ -6,15 +6,8 @@ using UnityEngine;
 public class WeaponModel : ScriptableObject, IEquatable<WeaponModel>
 {
     public string Name;
-
-    public GameObject Prefab;
     public Sprite PreviewSprite;
-
-    //public float CooldownUseRateInSeconds; // secs between uses
-    public float UsabilityTimeInSeconds; // total secs of usability before needing to recharge
-    public float RechargingTimeInSeconds; // recharging time
-    [Space]
-    public string AnimationTrigger;
+    public int MaxDirtLevel = 6;
 
     public override bool Equals(object obj)
     {
