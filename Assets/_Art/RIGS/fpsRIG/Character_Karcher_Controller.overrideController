@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Character_Karcher_Controller
+  m_Controller: {fileID: 9100000, guid: 1ad351c89e584d6479b54cff3c777cd3, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 2060030879607851157, guid: 7fef82a34de0ad8438fe012d9d805dc5, type: 3}
+    m_OverrideClip: {fileID: 146050500962504855, guid: 5c048fb454bfee246bafdc1e6cf18c73, type: 3}
+  - m_OriginalClip: {fileID: -6609762813277203832, guid: 7fef82a34de0ad8438fe012d9d805dc5, type: 3}
+    m_OverrideClip: {fileID: 6300013937706883600, guid: 5c048fb454bfee246bafdc1e6cf18c73, type: 3}
+  - m_OriginalClip: {fileID: -6092677674784930087, guid: 7fef82a34de0ad8438fe012d9d805dc5, type: 3}
+    m_OverrideClip: {fileID: -9110222968065499910, guid: 5c048fb454bfee246bafdc1e6cf18c73, type: 3}
+  - m_OriginalClip: {fileID: 5576464561067515943, guid: 7fef82a34de0ad8438fe012d9d805dc5, type: 3}
+    m_OverrideClip: {fileID: -7653646983130913270, guid: 5c048fb454bfee246bafdc1e6cf18c73, type: 3}
+  - m_OriginalClip: {fileID: 8279609146070918235, guid: 7fef82a34de0ad8438fe012d9d805dc5, type: 3}
+    m_OverrideClip: {fileID: -9110222968065499910, guid: 5c048fb454bfee246bafdc1e6cf18c73, type: 3}
+  - m_OriginalClip: {fileID: 7400000, guid: 67f86b1f659ed0e4d983e3ecdff6ace8, type: 2}
+    m_OverrideClip: {fileID: 146050500962504855, guid: 5c048fb454bfee246bafdc1e6cf18c73, type: 3}
+  - m_OriginalClip: {fileID: 7400000, guid: 76de1bbb604b1a84d93e9a7d42367437, type: 2}
+    m_OverrideClip: {fileID: 146050500962504855, guid: 5c048fb454bfee246bafdc1e6cf18c73, type: 3}
+  - m_OriginalClip: {fileID: 7400000, guid: a7d5c7d6a1d620a4ea0231e6a70ec323, type: 2}
+    m_OverrideClip: {fileID: 146050500962504855, guid: 5c048fb454bfee246bafdc1e6cf18c73, type: 3}
+  - m_OriginalClip: {fileID: 7400000, guid: 720d3f08a7f39374482e21b078622f38, type: 2}
+    m_OverrideClip: {fileID: 146050500962504855, guid: 5c048fb454bfee246bafdc1e6cf18c73, type: 3}

@@ -1,4 +1,5 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: d1608b7672a28b84b8aae25236e256eb
 folderAsset: yes
 DefaultImporter:
@@ -6,3 +7,6 @@ DefaultImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+=======
+guid: be11574018eb9cc4882e2d9ddb8c7926
+>>>>>>> 3ac89933587610f7b1e85b6cf939629f99ceabaf

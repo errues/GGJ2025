@@ -1,4 +1,5 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: ac7c4efc9cc67b445b767cf6b1e61404
 folderAsset: yes
 DefaultImporter:
@@ -6,3 +7,8 @@ DefaultImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+=======
+guid: a3ddd6af2a7a1d547a46bf318f3c16a6
+labels:
+- cartoonfx
+>>>>>>> 3ac89933587610f7b1e85b6cf939629f99ceabaf
