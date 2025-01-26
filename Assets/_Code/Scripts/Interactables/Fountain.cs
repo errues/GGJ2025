@@ -1,6 +1,7 @@
 public class Fountain : FixInteractable {
 
-    protected override void InteractionAction() {
+    protected override void InteractionAction() 
+    {
         weaponHandler.Current.ReduceDirtLevel();
     }
 }

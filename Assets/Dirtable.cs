@@ -17,13 +17,18 @@ public abstract class Dirtable : MonoBehaviour
     public void ReduceDirtLevel()
     {
         _dirtLevel = Math.Clamp(_dirtLevel - 1, MinDirtLevel, MaxDirtLevel);
-        if (_dirtLevel == MinDirtLevel)
+
+        if (this is not Weapon)
         {
-            MessageBus.Instance.Notify("AddHygiene", HygieneAddedByCleaning);
-        }
-        else
-        {
-            MessageBus.Instance.Notify("AddHygiene", HygieneAddedByReducing);
+            if (_dirtLevel == MinDirtLevel)
+            {
+                MessageBus.Instance.Notify("AddHygiene", HygieneAddedByCleaning);
+
+            }
+            else
+            {
+                MessageBus.Instance.Notify("AddHygiene", HygieneAddedByReducing);
+            }
         }
 
         UpdateView();

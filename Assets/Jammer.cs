@@ -17,6 +17,16 @@ public class Jammer : Cleanable
 
     public override void Interact()
     {
+        if (_dirtLevel == MinDirtLevel)
+        {
+            _animator.ResetTrigger("Cleaning");
+            _animator.SetTrigger("Cleaning");
+            return;
+        }
+
+
+
+
         if (_weaponHandler.Current.Model == _requiredWeapon)
         {
             ReduceDirtLevel();
