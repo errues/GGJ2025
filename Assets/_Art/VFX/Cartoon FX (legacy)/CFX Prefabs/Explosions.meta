@@ -1,4 +1,14 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+guid: 06bcbdb792ead4343a47ac039d530055
+folderAsset: yes
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+=======
 guid: c41f95c98750b744bb429ee2fc6a1d70
 labels:
 - cartoonfx
+>>>>>>> 3ac89933587610f7b1e85b6cf939629f99ceabaf

@@ -1,5 +1,8 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Video;
+using UnityEngine.UI;
+using System.Collections;
 
 public class MenuController : MonoBehaviour
 {
@@ -7,11 +10,21 @@ public class MenuController : MonoBehaviour
     private PlayerInput playerInput;
     [SerializeField] private GameObject[] menuList;
 
+    [SerializeField] private VideoPlayer videoPlayer;
+    [SerializeField] private RawImage rawImage;
+
     private int selected = -1;
     private Vector2 moveInput;
 
      private void Awake() {
         playerInput = GetComponent<PlayerInput>();
+
+        // Asegúrate de que el video esté configurado
+        if (videoPlayer != null)
+        {
+            // Suscríbete al evento loopPointReached
+            videoPlayer.loopPointReached += OnVideoEnd;
+        }
     }
 
     private void OnNavigate(InputValue value) {
@@ -37,5 +50,55 @@ public class MenuController : MonoBehaviour
         }
     }
 
-  
+    void OnVideoEnd(VideoPlayer vp)
+    {
+        FadeOutRawImage(rawImage, 0.1f);
+       
+        Debug.Log("El video ha terminado.");
+    }
+
+    void OnDestroy()
+    {
+        // Desuscríbete del evento para evitar errores
+        if (videoPlayer != null)
+        {
+            videoPlayer.loopPointReached -= OnVideoEnd;
+        }
+    }
+
+    public void FadeOutRawImage(RawImage rawImage, float duration)
+    {
+        StartCoroutine(FadeOutCoroutine(rawImage, duration));
+    }
+
+    private IEnumerator FadeOutCoroutine(RawImage rawImage, float duration)
+    {
+        if (rawImage == null)
+        {
+            Debug.LogError("RawImage es nulo. Asegúrate de asignar un RawImage.");
+            yield break;
+        }
+
+        Color originalColor = rawImage.color;
+        float elapsedTime = 0f;
+
+        while (elapsedTime < duration)
+        {
+            elapsedTime += Time.deltaTime;
+            float alpha = Mathf.Lerp(originalColor.a, 0f, elapsedTime / duration);
+            rawImage.color = new Color(originalColor.r, originalColor.g, originalColor.b, alpha);
+            yield return null;
+        }
+
+        // Asegura que la opacidad sea completamente 0 al finalizar
+        rawImage.color = new Color(originalColor.r, originalColor.g, originalColor.b, 0f);
+        // Activa los objetos especificados
+        foreach (GameObject obj in menuList)
+        {
+            obj.SetActive(true);
+        }
+
+    }
+
+
 }
