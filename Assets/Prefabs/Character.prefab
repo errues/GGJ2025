@@ -156,8 +156,8 @@ MonoBehaviour:
   movementSpeed: 3
   acceleration: 50
   sprintSpeedMultiplier: 2
-  lerpSpeed: 0
-  _weaponHandler: {fileID: 0}
+  lerpSpeed: 9
+  _weaponHandler: {fileID: 1536032799541139172}
 --- !u!114 &3605304436728283653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -202,10 +202,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hygieneBar: {fileID: 5389124025456808284}
   maxHygiene: 100
+  postprocessingChangeSpeed: 0.2
   cleanVolume: {fileID: 8296838698221950452}
   midVolume: {fileID: 3456072044946544921}
   dirtyVolume: {fileID: 2034767894186991405}
-  test: 0
 --- !u!114 &4182180300971298
 MonoBehaviour:
   m_ObjectHideFlags: 0
