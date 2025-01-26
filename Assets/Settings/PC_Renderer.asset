@@ -27,17 +27,18 @@ MonoBehaviour:
   m_RendererFeatures:
   - {fileID: 7833122117494664109}
   - {fileID: 6269844547618228127}
-  m_RendererFeatureMap: ad6b866f10d7b46c9f47b4a165f60257
+  - {fileID: 2189377441168278891}
+  m_RendererFeatureMap: ad6b866f10d7b46c9f47b4a165f602576bc516d42e3b621e
   m_UseNativeRenderPass: 1
   xrSystemData: {fileID: 0}
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   m_AssetVersion: 2
   m_OpaqueLayerMask:
     serializedVersion: 2
-    m_Bits: 55
+    m_Bits: 4026531895
   m_TransparentLayerMask:
     serializedVersion: 2
-    m_Bits: 55
+    m_Bits: 4026531895
   m_DefaultStencilState:
     overrideStencilState: 0
     stencilReference: 1
@@ -53,6 +54,24 @@ MonoBehaviour:
   m_DepthTextureFormat: 0
   m_AccurateGbufferNormals: 0
   m_IntermediateTextureMode: 0
+--- !u!114 &2189377441168278891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de99fb1f4b9cec14fb7c915265c0c6a2, type: 3}
+  m_Name: Outliner
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  renderEvent: 500
+  dilationMaterial: {fileID: 2100000, guid: 9c49c97c5cac49f4db0be7d0ff2a6a93, type: 2}
+  outlineMaterial: {fileID: 2100000, guid: 4e4d3a6f4399c744f9abcaa33d05d4d6, type: 2}
+  spread: 6
+  outlineColor: {r: 0, g: 1, b: 1, a: 1}
 --- !u!114 &6269844547618228127
 MonoBehaviour:
   m_ObjectHideFlags: 0
