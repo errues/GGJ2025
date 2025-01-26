@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.TextCore.Text;
 
 public class JammerGenerator : MonoBehaviour
 {
@@ -21,21 +20,26 @@ public class JammerGenerator : MonoBehaviour
     [SerializeField] private List<Mesh> shirt3;
 
     [Header("Face Textures")]
-    [SerializeField] private Texture faceTexture;
+    public Texture FaceTexture;
 
     [Header("Base Model")]
     [SerializeField] private GameObject baseModel;
 
-    private void Start()
+    //private void Start()
+    //{
+    //    // Assign random meshes to each body part using the child renderers
+    //    Generate();
+    //}
+
+    public void Generate()
     {
-        // Assign random meshes to each body part using the child renderers
         SetRandomMesh(baseModel, "character:arms", arms);
         SetRandomMesh(baseModel, "character:ears", ears);
         SetRandomMesh(baseModel, "character:eyebrows", eyebrows);
         SetRandomMesh(baseModel, "character:eyeL", eyeL);
         SetRandomMesh(baseModel, "character:eyeR", eyeR);
         SetRandomMesh(baseModel, "character:feet", feet);
-        SetRandomMesh(baseModel, "character:foto", foto, true, faceTexture);
+        SetRandomMesh(baseModel, "character:foto", foto, true, FaceTexture);
         SetRandomMesh(baseModel, "character:head", head);
         SetRandomMesh(baseModel, "character:head1", head1);
         SetRandomMesh(baseModel, "character:legs", legs);
