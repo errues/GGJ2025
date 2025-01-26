@@ -15,3 +15,5 @@ MonoBehaviour:
   SfxCollection:
   - Id: Sponge1
     Sfx: {fileID: 8300000, guid: 26acc0a6a394c074aa1260636f045b38, type: 3}
+  - Id: Mop1
+    Sfx: {fileID: 8300000, guid: e0a838dd306f7ce4aa22244813c26119, type: 3}
