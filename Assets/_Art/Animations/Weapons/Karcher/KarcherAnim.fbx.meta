@@ -147,7 +147,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: character_fps:DeformationSystem|character_fps:DeformationSystem|Sacar|BaseLayer
+      name: Sacar
       takeName: character_fps:DeformationSystem|character_fps:DeformationSystem|Sacar|BaseLayer
       internalID: -7653646983130913270
       firstFrame: 0

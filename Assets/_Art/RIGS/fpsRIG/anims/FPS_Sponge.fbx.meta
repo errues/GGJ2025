@@ -156,18 +156,11 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events:
-      - time: 0
-        functionName: PlayFX_RandomizePitch
-        data: Sponge1
-        objectReferenceParameter: {instanceID: 0}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
+      events: []
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 150.90001
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Sponge_Attack2
       takeName: Sponge_Attack2
@@ -192,18 +185,11 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events:
-      - time: 0.13762753
-        functionName: PlayFX_RandomizePitch
-        data: Sponge1
-        objectReferenceParameter: {instanceID: 0}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
+      events: []
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 180.90001
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Sponge_Attack3
       takeName: Sponge_Attack3
@@ -228,18 +214,11 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events:
-      - time: 0.054558225
-        functionName: PlayFX_RandomizePitch
-        data: Sponge1
-        objectReferenceParameter: {instanceID: 0}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
+      events: []
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 210.90001
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Sponge_Attack4
       takeName: Sponge_Attack4
@@ -264,18 +243,11 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events:
-      - time: 0.054558747
-        functionName: PlayFX_RandomizePitch
-        data: Sponge1
-        objectReferenceParameter: {instanceID: 0}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
+      events: []
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 240.9
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Sponge_Attack5
       takeName: Sponge_Attack5
@@ -300,18 +272,11 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events:
-      - time: 0.14325938
-        functionName: PlayFX_RandomizePitch
-        data: Sponge1
-        objectReferenceParameter: {instanceID: 0}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
+      events: []
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 270.9
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Sponge_Walk
       takeName: Sponge_Walk
@@ -537,7 +502,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 9
+    globalScale: 0.089999996
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

@@ -156,18 +156,11 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events:
-      - time: 0.21620601
-        functionName: PlayFX_RandomizePitch
-        data: Mop1
-        objectReferenceParameter: {instanceID: 0}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
+      events: []
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 150.90001
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Mop_Attack2
       takeName: Mop_Attack2
@@ -192,18 +185,11 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events:
-      - time: 0.20106035
-        functionName: PlayFX_RandomizePitch
-        data: Mop1
-        objectReferenceParameter: {instanceID: 0}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
+      events: []
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 180.90001
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Mop_Attack3
       takeName: Mop_Attack3
@@ -228,18 +214,11 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events:
-      - time: 0.21014756
-        functionName: PlayFX_RandomizePitch
-        data: Mop1
-        objectReferenceParameter: {instanceID: 0}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
+      events: []
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 210.90001
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Mop_Attack4
       takeName: Mop_Attack4
@@ -264,18 +243,11 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events:
-      - time: 0.21923536
-        functionName: PlayFX_RandomizePitch
-        data: Mop1
-        objectReferenceParameter: {instanceID: 0}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
+      events: []
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 240.9
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Mop_Attack5
       takeName: Mop_Attack5
@@ -300,18 +272,11 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events:
-      - time: 0.20408969
-        functionName: PlayFX_RandomizePitch
-        data: Mop1
-        objectReferenceParameter: {instanceID: 0}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
+      events: []
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 270.9
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Mop_Walk
       takeName: Mop_Walk
