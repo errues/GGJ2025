@@ -253,6 +253,7 @@ MonoBehaviour:
     maxHits: 4
   - hygieneValue: 10
     maxHits: 6
+  particleFX: {fileID: 1313344853171095701}
 --- !u!95 &3660203991763379826
 Animator:
   serializedVersion: 7
@@ -604,6 +605,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88489876c7c101f4f8cc2b81dbef96ca, type: 3}
+--- !u!198 &1313344853171095701 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 7397750422101661438, guid: 88489876c7c101f4f8cc2b81dbef96ca, type: 3}
+  m_PrefabInstance: {fileID: 8400311716600372843}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7816173339699577881 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1795606676702255730, guid: 88489876c7c101f4f8cc2b81dbef96ca, type: 3}
