@@ -46,6 +46,9 @@ public class KarcherController : MonoBehaviour {
 
     [ButtonMethod]
     public async void KarcherAppear() {
+
+        MusicController.Instance.AttenuateMusic();
+
         _appear.gameObject.SetActive(true);
         _appear.Play();
 
@@ -63,12 +66,16 @@ public class KarcherController : MonoBehaviour {
     }
 
     public async void StartUsingKarcher(CharacterWeaponHandler characterWeapon) {
+
+        MusicController.Instance.StopMusic();
+
         _appear.gameObject.SetActive(false);
 
         _appearIdle.Stop();
         _appearIdle.gameObject.SetActive(false);
 
         await Task.Delay((int)(3500));
+        MusicController.Instance.StartKarcherMusic();
 
         _usingLoop.gameObject.SetActive(true);
         _usingLoop.Play();
@@ -86,6 +93,7 @@ public class KarcherController : MonoBehaviour {
         await Task.Delay(100);
         _usingLoop.gameObject.SetActive(false);
 
+        MusicController.Instance.ResumeMusic();
         _stopUsing.gameObject.SetActive(true);
         _stopUsing.Play();
 
