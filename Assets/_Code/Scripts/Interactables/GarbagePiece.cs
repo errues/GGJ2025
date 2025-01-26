@@ -18,6 +18,14 @@ public class GarbagePiece : Dirt {
         return active;
     }
 
+    public override void Interact() {
+        if (CanDisappear()) {
+            Disappear();
+        } else {
+            animator.SetTrigger("WrongWeapon");
+        }
+    }
+
     protected override void AddHygiene() {
         MessageBus.Instance.Notify("AddHygiene", hygieneValue);
     }
