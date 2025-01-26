@@ -3857,6 +3857,10 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2011972570991365266, guid: 620fbb700459e4a4da4a4948dd328d21, type: 3}
+      propertyPath: vfx
+      value: 
+      objectReference: {fileID: 1757193017288312171}
+    - target: {fileID: 2011972570991365266, guid: 620fbb700459e4a4da4a4948dd328d21, type: 3}
       propertyPath: Animator
       value: 
       objectReference: {fileID: 2705902878339205936}
@@ -4268,6 +4272,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 2705902878339205936}
   m_SourcePrefab: {fileID: 100100000, guid: 620fbb700459e4a4da4a4948dd328d21, type: 3}
+--- !u!1 &1757193017288312171 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7923268944091258081, guid: 620fbb700459e4a4da4a4948dd328d21, type: 3}
+  m_PrefabInstance: {fileID: 8473477194343373194}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1838965779725405092 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7787435410389733934, guid: 620fbb700459e4a4da4a4948dd328d21, type: 3}
