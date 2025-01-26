@@ -28,7 +28,6 @@ Material:
   - TCP2_RAMP_BANDS
   - TCP2_REFLECTIONS_FRESNEL
   - TCP2_RIM_LIGHTING
-  - TCP2_RIM_LIGHTING_LIGHTMASK
   - TCP2_SHADOW_LIGHT_COLOR
   - TCP2_SPECULAR_STYLIZED
   m_InvalidKeywords:
@@ -175,8 +174,8 @@ Material:
     - _ReflectionMapType: 0
     - _ReflectionSmoothness: 0.5
     - _RenderingMode: 0
-    - _RimMax: 0.72
-    - _RimMin: 0.51
+    - _RimMax: 1.16
+    - _RimMin: 0.48
     - _ShadowColorLightAtten: 1
     - _SingleIndirectColor: 0
     - _Smoothness: 0.5
@@ -201,13 +200,13 @@ Material:
     - _UseOutline: 0
     - _UseReflections: 0
     - _UseRim: 1
-    - _UseRimLightMask: 1
+    - _UseRimLightMask: 0
     - _UseShadowTexture: 0
     - _UseSpecular: 0
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _BaseColor: {r: 0.23001064, g: 0.2601916, b: 0.2679245, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _HColor: {r: 0.735849, g: 0.735849, b: 0.735849, a: 1}

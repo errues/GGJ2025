@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TimeController : MonoBehaviour {
     private const float RealtimeDuration = 172800;
@@ -14,6 +15,7 @@ public class TimeController : MonoBehaviour {
 
     private void Awake() {
         remainingTime = gameDuration;
+        MessageBus.Instance.Subscribe("TimeUp", TimeUp);
     }
 
     void Update() {
@@ -34,5 +36,10 @@ public class TimeController : MonoBehaviour {
         int hours = (int)HypotheticalTime / 3600;
         int minutes = ((int)HypotheticalTime - hours * 3600) / 60;
         text.text = (hours < 10 ? "0" : "") + hours + ":" + (minutes < 10 ? "0" : "") + minutes;
+    }
+
+    private void TimeUp(object value)
+    {
+        SceneManager.LoadScene("WinScene");
     }
 }

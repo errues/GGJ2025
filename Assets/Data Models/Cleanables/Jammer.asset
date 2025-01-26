@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Jammer
   m_EditorClassIdentifier: 
   Name: Jammer
-  SecondsBetweenDirtUpgrades: 5
-  MaxDirtLevel: 0
+  RandomDirtTimeLimits: {x: 10, y: 30}
+  MaxDirtLevel: 2
