@@ -12,6 +12,7 @@ public class Puddle : Dirt {
     [Header("Hygiene Values")]
     [SerializeField] private PuddleData[] puddleDataPerTier;
 
+    [SerializeField] private ParticleSystem particleFX;
     private int remainingHits;
 
     private void Start() {
@@ -33,7 +34,7 @@ public class Puddle : Dirt {
         {
             remainingHits--;
             weaponHandler.Current.IncreaseDirtLevel();
-
+            PlayParticles();
             if (remainingHits == 0)
             {
                 Disappear();
@@ -91,5 +92,17 @@ public class Puddle : Dirt {
 
     protected override bool CanDisappear() {
         return weaponHandler.Current.Model == requiredWeapon && !weaponHandler.Current.IsFullDirty;
+    }
+
+    public void PlayParticles()
+    {
+        if (particleFX != null)
+        {
+            particleFX.Play(); // Reproduce el sistema de partículas
+        }
+        else
+        {
+            Debug.LogWarning("No ParticleSystem assigned!");
+        }
     }
 }
