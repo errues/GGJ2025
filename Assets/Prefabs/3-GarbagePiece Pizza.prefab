@@ -1,0 +1,168 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &4700975748027048877
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 961358329535029537, guid: 2c6da1e3b467e90488054cd5837d9c54, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.623
+      objectReference: {fileID: 0}
+    - target: {fileID: 961358329535029537, guid: 2c6da1e3b467e90488054cd5837d9c54, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.903
+      objectReference: {fileID: 0}
+    - target: {fileID: 961358329535029537, guid: 2c6da1e3b467e90488054cd5837d9c54, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.684
+      objectReference: {fileID: 0}
+    - target: {fileID: 961358329535029537, guid: 2c6da1e3b467e90488054cd5837d9c54, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 961358329535029537, guid: 2c6da1e3b467e90488054cd5837d9c54, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 961358329535029537, guid: 2c6da1e3b467e90488054cd5837d9c54, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 961358329535029537, guid: 2c6da1e3b467e90488054cd5837d9c54, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 961358329535029537, guid: 2c6da1e3b467e90488054cd5837d9c54, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 961358329535029537, guid: 2c6da1e3b467e90488054cd5837d9c54, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 961358329535029537, guid: 2c6da1e3b467e90488054cd5837d9c54, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140686483600731873, guid: 2c6da1e3b467e90488054cd5837d9c54, type: 3}
+      propertyPath: m_Name
+      value: 3-GarbagePiece Pizza
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140686483600731873, guid: 2c6da1e3b467e90488054cd5837d9c54, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3740437541245384555, guid: 2c6da1e3b467e90488054cd5837d9c54, type: 3}
+      propertyPath: m_Size.x
+      value: 0.42986488
+      objectReference: {fileID: 0}
+    - target: {fileID: 3740437541245384555, guid: 2c6da1e3b467e90488054cd5837d9c54, type: 3}
+      propertyPath: m_Size.y
+      value: 0.10903907
+      objectReference: {fileID: 0}
+    - target: {fileID: 3740437541245384555, guid: 2c6da1e3b467e90488054cd5837d9c54, type: 3}
+      propertyPath: m_Size.z
+      value: 0.4962626
+      objectReference: {fileID: 0}
+    - target: {fileID: 3740437541245384555, guid: 2c6da1e3b467e90488054cd5837d9c54, type: 3}
+      propertyPath: m_Center.y
+      value: 0.054519534
+      objectReference: {fileID: 0}
+    - target: {fileID: 3740437541245384555, guid: 2c6da1e3b467e90488054cd5837d9c54, type: 3}
+      propertyPath: m_Center.z
+      value: 0.010318249
+      objectReference: {fileID: 0}
+    - target: {fileID: 3740437541245384555, guid: 2c6da1e3b467e90488054cd5837d9c54, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7290892547030863507, guid: 2c6da1e3b467e90488054cd5837d9c54, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects:
+    - {fileID: 2375197673406698599, guid: 2c6da1e3b467e90488054cd5837d9c54, type: 3}
+    - {fileID: 7290892547030863507, guid: 2c6da1e3b467e90488054cd5837d9c54, type: 3}
+    - {fileID: 7535103164318667136, guid: 2c6da1e3b467e90488054cd5837d9c54, type: 3}
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 7712033851764591561, guid: 2c6da1e3b467e90488054cd5837d9c54, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 133365547227463987}
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2c6da1e3b467e90488054cd5837d9c54, type: 3}
+--- !u!4 &3043199028739680356 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7712033851764591561, guid: 2c6da1e3b467e90488054cd5837d9c54, type: 3}
+  m_PrefabInstance: {fileID: 4700975748027048877}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8243374006291017873
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 3043199028739680356}
+    m_Modifications:
+    - target: {fileID: 4844516808410805559, guid: 8b7ed3896e21b034fb5866f19de852fc, type: 3}
+      propertyPath: m_Name
+      value: Basura CajaPizza
+      objectReference: {fileID: 0}
+    - target: {fileID: 4844516808410805559, guid: 8b7ed3896e21b034fb5866f19de852fc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8340551859771994530, guid: 8b7ed3896e21b034fb5866f19de852fc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8340551859771994530, guid: 8b7ed3896e21b034fb5866f19de852fc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8340551859771994530, guid: 8b7ed3896e21b034fb5866f19de852fc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8340551859771994530, guid: 8b7ed3896e21b034fb5866f19de852fc, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8340551859771994530, guid: 8b7ed3896e21b034fb5866f19de852fc, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8340551859771994530, guid: 8b7ed3896e21b034fb5866f19de852fc, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8340551859771994530, guid: 8b7ed3896e21b034fb5866f19de852fc, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8340551859771994530, guid: 8b7ed3896e21b034fb5866f19de852fc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8340551859771994530, guid: 8b7ed3896e21b034fb5866f19de852fc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8340551859771994530, guid: 8b7ed3896e21b034fb5866f19de852fc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8b7ed3896e21b034fb5866f19de852fc, type: 3}
+--- !u!4 &133365547227463987 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8340551859771994530, guid: 8b7ed3896e21b034fb5866f19de852fc, type: 3}
+  m_PrefabInstance: {fileID: 8243374006291017873}
+  m_PrefabAsset: {fileID: 0}
