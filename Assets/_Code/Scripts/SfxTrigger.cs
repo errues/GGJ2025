@@ -17,9 +17,21 @@ public class SfxTrigger : MonoBehaviour
 
     public void PlayFX(string id)
     {
+        _aSource.pitch = 1;
         var clip = _library.GetSfxById(id);
         if(clip != null)
         {
+            _aSource.PlayOneShot(clip);
+        }
+    }
+
+
+    public void PlayFX_RandomizePitch(string id)
+    {
+        var clip = _library.GetSfxById(id);
+        if (clip != null)
+        {
+            _aSource.pitch = Random.Range(1f, 3f);
             _aSource.PlayOneShot(clip);
         }
     }
