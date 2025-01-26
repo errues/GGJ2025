@@ -28,14 +28,7 @@ public abstract class Dirt : MonoBehaviour, IInteractable {
     protected abstract void ReduceHygiene();
     protected abstract void AddHygiene();
     protected abstract bool CanDisappear();
-
-    public void Interact() {
-        if (CanDisappear()) {
-            Disappear();
-        } else {
-            animator.SetTrigger("WrongWeapon");
-        }
-    }
+    public abstract void Interact();
 
     protected virtual void Disappear() {
         active = false;
