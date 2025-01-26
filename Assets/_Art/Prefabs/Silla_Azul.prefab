@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5335112255470116973}
   - component: {fileID: 2165142725923745832}
   - component: {fileID: 7000625351208747435}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Silla_Azul
   m_TagString: Untagged
   m_Icon: {fileID: 0}

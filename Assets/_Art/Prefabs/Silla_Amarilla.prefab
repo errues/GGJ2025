@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7748251314165707785}
   - component: {fileID: 5096560898229363874}
   - component: {fileID: 774923925156091097}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Silla_Amarilla
   m_TagString: Untagged
   m_Icon: {fileID: 0}
