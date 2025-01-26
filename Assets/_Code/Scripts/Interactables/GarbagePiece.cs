@@ -14,6 +14,16 @@ public class GarbagePiece : Dirt {
         MessageBus.Instance.Notify("AddHygiene", hygieneValue);
     }
 
+    protected override bool CanDisappear() {
+        return weaponHandler.Current.Model == requiredWeapon && GarbageManager.Instance.CanSpaceGarbage();
+    }
+
+    protected override void Disappear() {
+        base.Disappear();
+
+        GarbageManager.Instance.PickUpGarbage();
+    }
+
     protected override void ReduceHygiene() {
         MessageBus.Instance.Notify("ReduceHygiene", hygieneValue);
     }
