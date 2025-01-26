@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Jammer
   SecondsBetweenDirtUpgrades: 3
+  MaxDirtLevel: 0

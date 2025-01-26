@@ -52,7 +52,7 @@ MonoBehaviour:
   - {fileID: 6943709087449396368}
   - {fileID: 1593897255463637208}
   - {fileID: 682468097417022402}
-  - {fileID: 3303060784009049044}
+  _specialWeapon: {fileID: 3303060784009049044}
 --- !u!1001 &4043107069430505166
 PrefabInstance:
   m_ObjectHideFlags: 0

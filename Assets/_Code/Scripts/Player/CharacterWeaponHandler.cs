@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System.Collections;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
@@ -7,15 +8,30 @@ public class CharacterWeaponHandler : MonoBehaviour
 {
     private PlayerInput _playerInput;
     private int _currentWeaponIndex = 0;
-    private int _totalWeaponsAmount = 3;
+    private int _totalWeaponsAmount => _weapons.Length;
+
+    [SerializeField] private Weapon[] _weapons;
+    [SerializeField] private Weapon _specialWeapon;
+
+    public Weapon Current
+    {
+        get
+        {
+            if (_usingSpecialWeapon)
+                return _specialWeapon;
+            else
+                return _weapons[_currentWeaponIndex];
+        }
+    }
 
     public Animator CurrentWeaponAnimator => Current.Animator;
-    [SerializeField] private Weapon[] _weapons;
-
-    public Weapon Current => _weapons[_currentWeaponIndex];
+    
     public UnityAction<Weapon> OnWeaponChanged;
 
+    private bool _usingSpecialWeapon = false;
     private bool _isChangingWeapon;
+
+    private Coroutine _changeWeaponCoroutine;
 
 
     private void Awake()
@@ -24,8 +40,6 @@ public class CharacterWeaponHandler : MonoBehaviour
         _playerInput.actions["Attack"].performed += OnAttack;
         _playerInput.actions["Previous"].performed += OnPrevious;
         _playerInput.actions["Next"].performed += OnNext;
-
-        _totalWeaponsAmount = _weapons.Length;
     }
 
     private void OnAttack(InputAction.CallbackContext context)
@@ -35,30 +49,61 @@ public class CharacterWeaponHandler : MonoBehaviour
         Current.Attack();
     }
 
-    private async void OnPrevious(InputAction.CallbackContext context)
+    private void OnPrevious(InputAction.CallbackContext context)
     {
-        await ChangeWeaponIndex(-1);
+        if (_usingSpecialWeapon) return;
+
+        _changeWeaponCoroutine = StartCoroutine(ChangeWeaponIndex(_currentWeaponIndex - 1));
     }
 
-    private async void OnNext(InputAction.CallbackContext context)
+    private void OnNext(InputAction.CallbackContext context)
     {
-        await ChangeWeaponIndex(1);
+        if (_usingSpecialWeapon) return;
+
+        _changeWeaponCoroutine = StartCoroutine(ChangeWeaponIndex(_currentWeaponIndex + 1));
     }
 
-    private async Task ChangeWeaponIndex(int direction)
+    private IEnumerator ChangeWeaponIndex(int index)
     {
-        if (_isChangingWeapon) return;
+        if (_isChangingWeapon) yield break;
 
         _isChangingWeapon = true;
         Current.Hide();
-        await Task.Delay(1000);
+        yield return new WaitForSeconds(1);
         Current.Animator.gameObject.SetActive(false);
 
-        _currentWeaponIndex = (_currentWeaponIndex + direction + _totalWeaponsAmount) % _totalWeaponsAmount;
+        _currentWeaponIndex = (index + _totalWeaponsAmount) % _totalWeaponsAmount;
 
         Current.Show();
         OnWeaponChanged(Current);
         _isChangingWeapon = false;
     }
 
+    private void SetSpecialWeapon()
+    {
+        if (_changeWeaponCoroutine != null)
+            StopCoroutine(_changeWeaponCoroutine);
+
+        StartCoroutine(ChangeToSpecialWeapon());
+    }
+
+    private void FinishSpecialWeapon()
+    {
+        _usingSpecialWeapon = false;
+        _changeWeaponCoroutine = StartCoroutine(ChangeWeaponIndex(_currentWeaponIndex));
+    }
+
+    private IEnumerator ChangeToSpecialWeapon()
+    {
+        _isChangingWeapon = true;
+        Current.Hide();
+        yield return new WaitForSeconds(1);
+        Current.Animator.gameObject.SetActive(false);
+
+        _usingSpecialWeapon = true;
+
+        Current.Show();
+        OnWeaponChanged(Current);
+        _isChangingWeapon = false;
+    }
 }
