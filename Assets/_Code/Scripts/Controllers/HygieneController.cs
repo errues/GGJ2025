@@ -13,7 +13,7 @@ public class HygieneController : MonoBehaviour {
     [SerializeField] private Volume dirtyVolume;
 
     private int currentHygiene;
-    private float cleanWeightTarget;
+    private float cleanWeightTarget = 1;
     private float midWeightTarget;
     private float dirtyWeightTarget;
 
