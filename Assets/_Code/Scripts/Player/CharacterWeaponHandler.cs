@@ -21,10 +21,8 @@ public class CharacterWeaponHandler : MonoBehaviour {
         }
     }
 
-    public int CurrentIndex
-    {
-        get
-        {
+    public int CurrentIndex {
+        get {
             if (_usingSpecialWeapon)
                 return _weapons.Length;
             else
@@ -106,5 +104,9 @@ public class CharacterWeaponHandler : MonoBehaviour {
         Current.Show();
         OnWeaponChanged(CurrentIndex);
         _isChangingWeapon = false;
+
+        yield return new WaitForSeconds(5);
+
+        ((Karcher)Current).ActivateKarcher();
     }
 }
