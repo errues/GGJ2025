@@ -7,7 +7,8 @@ public class BlurredBufferMultiObjectOutlineRendererFeature : ScriptableRenderer
     private static readonly int SpreadId = Shader.PropertyToID("_Spread");
 
     [SerializeField] private RenderPassEvent renderEvent = RenderPassEvent.AfterRenderingTransparents;
-    [Space, SerializeField] private Material dilationMaterial;
+    [Space]
+    [SerializeField] private Material dilationMaterial;
     [SerializeField] private Material outlineMaterial;
     [SerializeField, Range(1, 60)] private int spread = 10;
     [SerializeField] private Color outlineColor = Color.cyan;
