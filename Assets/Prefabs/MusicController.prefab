@@ -48,7 +48,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameMusicLoop: {fileID: 2575840982249960862}
   karcherMusicLoop: {fileID: 469406415898071301}
-  musicAttenuation: 0.4
+  musicAttenuation: 0.3
 --- !u!82 &2575840982249960862
 AudioSource:
   m_ObjectHideFlags: 0
@@ -64,7 +64,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -161,7 +161,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
