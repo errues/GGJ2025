@@ -61,14 +61,15 @@ public class HygieneController : MonoBehaviour {
         dirtyWeightTarget = 1 - Mathf.Lerp(0, 1, (normalizedHygiene - .166f) / .33f);
     }
 
-    private void GameOver(object value)
-    {
-        if(!gameOver)
-        {
+    private void GameOver(object value) {
+        if (!gameOver) {
             gameOver = true;
+            MessageBus.Instance.Unsubscribe("AddHygiene", AddHygiene);
+            MessageBus.Instance.Unsubscribe("ReduceHygiene", ReduceHygiene);
+            MessageBus.Instance.Unsubscribe("GameOver", GameOver);
             SceneManager.LoadScene("LooseScene");
         }
-        
+
     }
 
 }
