@@ -59720,8 +59720,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fountain
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 3705487494654933882, guid: 4061bea0f4ecdda4a94b5c4657887a1e, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -224404,8 +224403,7 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 2009852179}
-    m_RemovedComponents:
-    - {fileID: 3596941582909473199, guid: acf4d8ad11a0df4428956a549be32014, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

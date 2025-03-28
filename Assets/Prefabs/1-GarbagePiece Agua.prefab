@@ -59,11 +59,39 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3865231939991357364, guid: 918dd732a2cb8c54ba542a14f1d33b6c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3788567446330601853}
   m_SourcePrefab: {fileID: 100100000, guid: 918dd732a2cb8c54ba542a14f1d33b6c, type: 3}
+--- !u!1 &4019709740862747854 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3865231939991357364, guid: 918dd732a2cb8c54ba542a14f1d33b6c, type: 3}
+  m_PrefabInstance: {fileID: 174777604683920250}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3788567446330601853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4019709740862747854}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24a02ce7e0751584f9df445e3740e21d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineRendererFeature: {fileID: 2189377441168278891, guid: f288ae1f4751b564a96ac7587541f7a2, type: 2}
+  outlineRenderers:
+  - {fileID: 8732229389638616450}
 --- !u!4 &4624736991993901242 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4774574837698347968, guid: 918dd732a2cb8c54ba542a14f1d33b6c, type: 3}
+  m_PrefabInstance: {fileID: 174777604683920250}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &8732229389638616450 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 8882210154699962104, guid: 918dd732a2cb8c54ba542a14f1d33b6c, type: 3}
   m_PrefabInstance: {fileID: 174777604683920250}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &9151592131056792206
