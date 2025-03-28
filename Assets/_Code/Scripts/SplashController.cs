@@ -3,6 +3,8 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.Video;
 using System.Collections;
+using UnityEngine.InputSystem.UI;
+using UnityEngine.EventSystems;
 
 public class ImageToWhiteAndLoadScene : MonoBehaviour
 {
@@ -14,6 +16,14 @@ public class ImageToWhiteAndLoadScene : MonoBehaviour
     [SerializeField] private VideoPlayer videoPlayer;
 
     private float timer = 0.0f;
+
+    private InputSystemUIInputModule inputSystemUIInputModule
+    {
+        get
+        {
+            return (InputSystemUIInputModule)EventSystem.current?.currentInputModule;
+        }
+    }
 
     private void Start()
     {
@@ -37,6 +47,15 @@ public class ImageToWhiteAndLoadScene : MonoBehaviour
 
     private void Update()
     {
+        // Saltar la intro con botón cancelar
+        if (inputSystemUIInputModule != null && inputSystemUIInputModule.cancel.action.WasPressedThisFrame())
+        {
+            timer = transitionTime;
+            videoPlayer.Stop();
+
+            OnVideoEnd(videoPlayer);
+        }
+        
         if (uiImage != null && timer < transitionTime)
         {
             timer += Time.deltaTime;
