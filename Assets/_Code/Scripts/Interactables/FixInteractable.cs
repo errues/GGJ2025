@@ -14,11 +14,15 @@ public abstract class FixInteractable : MonoBehaviour, IInteractable {
     }
 
     public void CancelInteract() {
-        outlineRenderer.enabled = false;
+        if (outlineRenderer != null) {
+            outlineRenderer.enabled = false;
+        }
     }
 
     public void EnteredInteractionRange() {
-        outlineRenderer.enabled = true;
+        if (outlineRenderer != null) {
+            outlineRenderer.enabled = true;
+        }
     }
 
     public bool CanInteract() {
